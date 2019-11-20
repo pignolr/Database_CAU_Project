@@ -1,0 +1,531 @@
+2019-11-20T15:56:15.794Z - error: uncaughtException: database is not defined date=Thu Nov 21 2019 00:56:15 GMT+0900 (KST), pid=14415, uid=1000, gid=1000, cwd=/home/freji/Documents/CAU/Database_CAU_Project/App, execPath=/usr/bin/node, version=v8.10.0, argv=[/usr/bin/node, /home/freji/Documents/CAU/Database_CAU_Project/App/server.js], rss=81719296, heapTotal=58855424, heapUsed=33515600, external=841372, loadavg=[1.68359375, 1.21435546875, 1.02685546875], uptime=18636
+/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:1
+ReferenceError: database is not defined
+    at Object.<anonymous> (/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:6:59)
+    at Generator.next (<anonymous>)
+2019-11-20T15:57:17.817Z - error: uncaughtException: require(...) is not a function date=Thu Nov 21 2019 00:57:17 GMT+0900 (KST), pid=14492, uid=1000, gid=1000, cwd=/home/freji/Documents/CAU/Database_CAU_Project/App, execPath=/usr/bin/node, version=v8.10.0, argv=[/usr/bin/node, /home/freji/Documents/CAU/Database_CAU_Project/App/server.js], rss=81956864, heapTotal=58855424, heapUsed=33520248, external=841372, loadavg=[1.30615234375, 1.21337890625, 1.03857421875], uptime=18698
+/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:1
+TypeError: require(...) is not a function
+    at Object.<anonymous> (/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:7:49)
+    at Generator.next (<anonymous>)
+2019-11-20T15:58:09.246Z - error: uncaughtException: require(...) is not a function date=Thu Nov 21 2019 00:58:09 GMT+0900 (KST), pid=14548, uid=1000, gid=1000, cwd=/home/freji/Documents/CAU/Database_CAU_Project/App, execPath=/usr/bin/node, version=v8.10.0, argv=[/usr/bin/node, /home/freji/Documents/CAU/Database_CAU_Project/App/server.js], rss=83283968, heapTotal=58855424, heapUsed=33572840, external=841372, loadavg=[1.46728515625, 1.28515625, 1.07421875], uptime=18749
+/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:1
+TypeError: require(...) is not a function
+    at Object.<anonymous> (/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:7:49)
+    at Generator.next (<anonymous>)
+2019-11-20T15:59:19.645Z - info: Listening on port 8080
+2019-11-20T15:59:26.969Z - info: 302 GET / 10ms
+2019-11-20T15:59:26.983Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:26.993Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:26.997Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.006Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:27.015Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.024Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.030Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.037Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:27.043Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:27.048Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:27.053Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:27.059Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.064Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.069Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:27.076Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.081Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:27.085Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.092Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.098Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:27.102Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.831Z - info: 302 GET /gallery 2ms
+2019-11-20T15:59:35.844Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.849Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.857Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.861Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.865Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.873Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.878Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.887Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.894Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.898Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.906Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.911Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.920Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.924Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.929Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.939Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:35.945Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.960Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.978Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:35.997Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:37.883Z - info: 302 GET /gallery 2ms
+2019-11-20T15:59:37.899Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.905Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.914Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:37.921Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.929Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:37.937Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:37.947Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.952Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.959Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:37.964Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:37.970Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.979Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:37.983Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.989Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:37.996Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:38.001Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:38.005Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:38.012Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:38.017Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:38.028Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.495Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.508Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.516Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.525Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.536Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.544Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.555Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.562Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.570Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.577Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.584Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.589Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.593Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.600Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.605Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.610Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.621Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.627Z - info: 302 GET /gallery 0ms
+2019-11-20T15:59:48.637Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.647Z - info: 302 GET /gallery 1ms
+2019-11-20T15:59:48.657Z - info: 302 GET /gallery 0ms
+2019-11-20T16:01:30.949Z - info: Listening on port 8080
+2019-11-20T16:01:35.583Z - info: 302 GET / 15ms
+2019-11-20T16:01:35.597Z - info: 200 GET /gallery 2ms
+2019-11-20T16:01:35.645Z - info: 404 GET /favicon.ico 2ms
+2019-11-20T16:01:38.918Z - info: 302 GET / 1ms
+2019-11-20T16:01:38.924Z - info: 304 GET /gallery 1ms
+2019-11-20T16:04:05.988Z - info: Listening on port 8080
+2019-11-20T16:04:07.516Z - info: 200 GET /profil-monument 9ms
+2019-11-20T16:19:45.376Z - info: Listening on port 8080
+2019-11-20T16:20:38.392Z - info: 302 GET / 7ms
+2019-11-20T16:20:38.402Z - info: 304 GET /gallery 2ms
+2019-11-20T16:22:29.406Z - info: Listening on port 8080
+2019-11-20T16:22:43.782Z - info: 200 GET /planning 3ms
+2019-11-20T16:23:10.991Z - info: Listening on port 8080
+2019-11-20T16:23:12.244Z - info: 404 GET /login 14ms
+2019-11-20T16:23:15.908Z - info: 404 GET /login 2ms
+2019-11-20T16:23:30.286Z - info: 404 GET /login 2ms
+2019-11-20T16:23:30.361Z - info: 404 GET /login 1ms
+2019-11-20T16:23:34.271Z - info: Listening on port 8080
+2019-11-20T16:23:35.144Z - info: 200 GET /login 7ms
+2019-11-20T16:24:41.109Z - error: uncaughtException: Most middleware (like cookieParser) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware. date=Thu Nov 21 2019 01:24:41 GMT+0900 (KST), pid=15860, uid=1000, gid=1000, cwd=/home/freji/Documents/CAU/Database_CAU_Project/App, execPath=/usr/bin/node, version=v8.10.0, argv=[/usr/bin/node, /home/freji/Documents/CAU/Database_CAU_Project/App/server.js], rss=83099648, heapTotal=58855424, heapUsed=34603488, external=803830, loadavg=[1.2080078125, 1.248046875, 1.1591796875], uptime=20341
+/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/express.js:1
+Error: Most middleware (like cookieParser) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.
+    at Function.get (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/express.js:112:13)
+    at Object.get (<anonymous>)
+    at require.module.exports (/home/freji/Documents/CAU/Database_CAU_Project/App/app/createExpressApp.js:20:18)
+    at Object.<anonymous> (/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:7:49)
+    at Generator.next (<anonymous>)
+2019-11-20T16:25:10.961Z - info: Listening on port 8080
+2019-11-20T16:25:27.791Z - error: uncaughtException: Most middleware (like cookieParser) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware. date=Thu Nov 21 2019 01:25:27 GMT+0900 (KST), pid=15961, uid=1000, gid=1000, cwd=/home/freji/Documents/CAU/Database_CAU_Project/App, execPath=/usr/bin/node, version=v8.10.0, argv=[/usr/bin/node, /home/freji/Documents/CAU/Database_CAU_Project/App/server.js], rss=83206144, heapTotal=59379712, heapUsed=34644384, external=803830, loadavg=[1.70068359375, 1.38232421875, 1.208984375], uptime=20388
+/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/express.js:1
+Error: Most middleware (like cookieParser) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.
+    at Function.get (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/express.js:112:13)
+    at Object.get (<anonymous>)
+    at require.module.exports (/home/freji/Documents/CAU/Database_CAU_Project/App/app/createExpressApp.js:22:18)
+    at Object.<anonymous> (/home/freji/Documents/CAU/Database_CAU_Project/App/server.js:7:49)
+    at Generator.next (<anonymous>)
+2019-11-20T16:27:21.374Z - error: uncaughtException: Cannot find module 'cookie-parser'
+Require stack:
+- /home/freji/Documents/CAU/Database_CAU_Project/App/app/createExpressApp.js
+- /home/freji/Documents/CAU/Database_CAU_Project/App/server.js date=Thu Nov 21 2019 01:27:21 GMT+0900 (KST), pid=16089, uid=1000, gid=1000, cwd=/home/freji/Documents/CAU/Database_CAU_Project/App, execPath=/usr/bin/node, version=v8.10.0, argv=[/usr/bin/node, /home/freji/Documents/CAU/Database_CAU_Project/App/server.js], rss=54349824, heapTotal=29884416, heapUsed=15532112, external=345790, loadavg=[0.9658203125, 1.19140625, 1.1572265625], uptime=20501
+/home/freji/Documents/CAU/Database_CAU_Project/App/app/createExpressApp.js:1
+Error: Cannot find module 'cookie-parser'
+Require stack:
+- /home/freji/Documents/CAU/Database_CAU_Project/App/app/createExpressApp.js
+- /home/freji/Documents/CAU/Database_CAU_Project/App/server.js
+    at Object.<anonymous> (/home/freji/Documents/CAU/Database_CAU_Project/App/app/createExpressApp.js:1)
+2019-11-20T16:29:41.569Z - info: Listening on port 8080
+2019-11-20T16:29:45.283Z - info: 304 GET /login 11ms
+2019-11-20T16:29:53.084Z - info: 200 GET /register 2ms
+2019-11-20T16:30:24.209Z - info: Listening on port 8080
+2019-11-20T16:30:25.728Z - info: 304 GET /login 10ms
+2019-11-20T16:31:21.774Z - info: 302 GET /login 8ms
+2019-11-20T16:31:21.799Z - info: 302 GET / 1ms
+2019-11-20T16:31:21.816Z - info: 304 GET /gallery 2ms
+2019-11-20T16:31:24.737Z - info: 304 GET /gallery 1ms
+2019-11-20T16:31:27.621Z - info: 302 GET /login 0ms
+2019-11-20T16:31:27.636Z - info: 302 GET / 1ms
+2019-11-20T16:31:27.649Z - info: 304 GET /gallery 1ms
+2019-11-20T16:31:40.594Z - info: 302 GET /login 0ms
+2019-11-20T16:31:40.603Z - info: 302 GET / 0ms
+2019-11-20T16:31:40.617Z - info: 304 GET /gallery 1ms
+2019-11-20T16:31:53.901Z - info: 304 GET /gallery 1ms
+2019-11-20T16:31:55.130Z - info: 304 GET /gallery 2ms
+2019-11-20T16:32:21.404Z - info: 304 GET /gallery 2ms
+2019-11-20T16:34:32.871Z - info: Listening on port 8080
+2019-11-20T16:34:36.241Z - info: 302 GET /login 10ms
+2019-11-20T16:34:36.249Z - info: 302 GET / 1ms
+2019-11-20T16:34:36.262Z - info: 304 GET /gallery 1ms
+2019-11-20T16:34:40.078Z - info: 302 GET /logout 2ms
+2019-11-20T16:34:40.097Z - info: 302 GET / 1ms
+2019-11-20T16:34:40.105Z - info: 304 GET /gallery 1ms
+2019-11-20T16:34:44.013Z - info: 200 GET /login 1ms
+2019-11-20T16:45:35.456Z - info: Listening on port 8080
+2019-11-20T16:48:39.239Z - info: Listening on port 8080
+2019-11-20T16:49:23.018Z - info: Listening on port 8080
+2019-11-20T16:49:23.430Z - error: { Error: Failed to lookup view "login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10)
+  view: 
+   View {
+     defaultEngine: 'ejs',
+     ext: '.ejs',
+     name: 'login.ejs',
+     root: '/home/freji/Documents/CAU/Database_CAU_Project/App/views',
+     engine: [Function],
+     path: undefined } } message=Failed to lookup view "login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views", stack=Error: Failed to lookup view "login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10), defaultEngine=ejs, ext=.ejs, name=login.ejs, root=/home/freji/Documents/CAU/Database_CAU_Project/App/views, engine=function () {
+  var args = Array.prototype.slice.call(arguments);
+  var filename = args.shift();
+  var cb;
+  var opts = {filename: filename};
+  var data;
+  var viewOpts;
+
+  // Do we have a callback?
+  if (typeof arguments[arguments.length - 1] == 'function') {
+    cb = args.pop();
+  }
+  // Do we have data/opts?
+  if (args.length) {
+    // Should always have data obj
+    data = args.shift();
+    // Normal passed opts (data obj + opts obj)
+    if (args.length) {
+      // Use shallowCopy so we don't pollute passed in opts obj with new vals
+      utils.shallowCopy(opts, args.pop());
+    }
+    // Special casing for Express (settings + opts-in-data)
+    else {
+      // Express 3 and 4
+      if (data.settings) {
+        // Pull a few things from known locations
+        if (data.settings.views) {
+          opts.views = data.settings.views;
+        }
+        if (data.settings['view cache']) {
+          opts.cache = true;
+        }
+        // Undocumented after Express 2, but still usable, esp. for
+        // items that are unsafe to be passed along with data, like `root`
+        viewOpts = data.settings['view options'];
+        if (viewOpts) {
+          utils.shallowCopy(opts, viewOpts);
+        }
+      }
+      // Express 2 and lower, values set in app.locals, or people who just
+      // want to pass options in their data. NOTE: These values will override
+      // anything previously set in settings  or settings['view options']
+      utils.shallowCopyFromList(opts, data, _OPTS_PASSABLE_WITH_DATA_EXPRESS);
+    }
+    opts.filename = filename;
+  }
+  else {
+    data = {};
+  }
+
+  return tryHandleCache(opts, data, cb);
+}, path=undefined
+2019-11-20T16:49:23.442Z - info: 500 GET /login 64ms
+2019-11-20T16:49:52.768Z - info: Listening on port 8080
+2019-11-20T16:49:54.120Z - error: { Error: Failed to lookup view "login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10)
+  view: 
+   View {
+     defaultEngine: undefined,
+     ext: '.ejs',
+     name: 'login.ejs',
+     root: '/home/freji/Documents/CAU/Database_CAU_Project/App/views',
+     engine: [Function],
+     path: undefined } } message=Failed to lookup view "login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views", stack=Error: Failed to lookup view "login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10), defaultEngine=undefined, ext=.ejs, name=login.ejs, root=/home/freji/Documents/CAU/Database_CAU_Project/App/views, engine=function () {
+  var args = Array.prototype.slice.call(arguments);
+  var filename = args.shift();
+  var cb;
+  var opts = {filename: filename};
+  var data;
+  var viewOpts;
+
+  // Do we have a callback?
+  if (typeof arguments[arguments.length - 1] == 'function') {
+    cb = args.pop();
+  }
+  // Do we have data/opts?
+  if (args.length) {
+    // Should always have data obj
+    data = args.shift();
+    // Normal passed opts (data obj + opts obj)
+    if (args.length) {
+      // Use shallowCopy so we don't pollute passed in opts obj with new vals
+      utils.shallowCopy(opts, args.pop());
+    }
+    // Special casing for Express (settings + opts-in-data)
+    else {
+      // Express 3 and 4
+      if (data.settings) {
+        // Pull a few things from known locations
+        if (data.settings.views) {
+          opts.views = data.settings.views;
+        }
+        if (data.settings['view cache']) {
+          opts.cache = true;
+        }
+        // Undocumented after Express 2, but still usable, esp. for
+        // items that are unsafe to be passed along with data, like `root`
+        viewOpts = data.settings['view options'];
+        if (viewOpts) {
+          utils.shallowCopy(opts, viewOpts);
+        }
+      }
+      // Express 2 and lower, values set in app.locals, or people who just
+      // want to pass options in their data. NOTE: These values will override
+      // anything previously set in settings  or settings['view options']
+      utils.shallowCopyFromList(opts, data, _OPTS_PASSABLE_WITH_DATA_EXPRESS);
+    }
+    opts.filename = filename;
+  }
+  else {
+    data = {};
+  }
+
+  return tryHandleCache(opts, data, cb);
+}, path=undefined
+2019-11-20T16:49:54.125Z - info: 500 GET /login 50ms
+2019-11-20T16:51:11.547Z - info: Listening on port 8080
+2019-11-20T16:51:13.010Z - error: { Error: Failed to lookup view "auth/login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10)
+  view: 
+   View {
+     defaultEngine: undefined,
+     ext: '.ejs',
+     name: 'auth/login.ejs',
+     root: '/home/freji/Documents/CAU/Database_CAU_Project/App/views',
+     engine: [Function],
+     path: undefined } } message=Failed to lookup view "auth/login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views", stack=Error: Failed to lookup view "auth/login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10), defaultEngine=undefined, ext=.ejs, name=auth/login.ejs, root=/home/freji/Documents/CAU/Database_CAU_Project/App/views, engine=function () {
+  var args = Array.prototype.slice.call(arguments);
+  var filename = args.shift();
+  var cb;
+  var opts = {filename: filename};
+  var data;
+  var viewOpts;
+
+  // Do we have a callback?
+  if (typeof arguments[arguments.length - 1] == 'function') {
+    cb = args.pop();
+  }
+  // Do we have data/opts?
+  if (args.length) {
+    // Should always have data obj
+    data = args.shift();
+    // Normal passed opts (data obj + opts obj)
+    if (args.length) {
+      // Use shallowCopy so we don't pollute passed in opts obj with new vals
+      utils.shallowCopy(opts, args.pop());
+    }
+    // Special casing for Express (settings + opts-in-data)
+    else {
+      // Express 3 and 4
+      if (data.settings) {
+        // Pull a few things from known locations
+        if (data.settings.views) {
+          opts.views = data.settings.views;
+        }
+        if (data.settings['view cache']) {
+          opts.cache = true;
+        }
+        // Undocumented after Express 2, but still usable, esp. for
+        // items that are unsafe to be passed along with data, like `root`
+        viewOpts = data.settings['view options'];
+        if (viewOpts) {
+          utils.shallowCopy(opts, viewOpts);
+        }
+      }
+      // Express 2 and lower, values set in app.locals, or people who just
+      // want to pass options in their data. NOTE: These values will override
+      // anything previously set in settings  or settings['view options']
+      utils.shallowCopyFromList(opts, data, _OPTS_PASSABLE_WITH_DATA_EXPRESS);
+    }
+    opts.filename = filename;
+  }
+  else {
+    data = {};
+  }
+
+  return tryHandleCache(opts, data, cb);
+}, path=undefined
+2019-11-20T16:51:13.018Z - info: 500 GET /login 27ms
+2019-11-20T16:52:20.710Z - info: Listening on port 8080
+2019-11-20T16:52:22.976Z - error: { Error: Failed to lookup view "auth/login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10)
+  view: 
+   View {
+     defaultEngine: 'ejs',
+     ext: '.ejs',
+     name: 'auth/login.ejs',
+     root: '/home/freji/Documents/CAU/Database_CAU_Project/App/views',
+     engine: [Function],
+     path: undefined } } message=Failed to lookup view "auth/login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views", stack=Error: Failed to lookup view "auth/login.ejs" in views directory "/home/freji/Documents/CAU/Database_CAU_Project/App/views"
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/index.js:275:10), defaultEngine=ejs, ext=.ejs, name=auth/login.ejs, root=/home/freji/Documents/CAU/Database_CAU_Project/App/views, engine=function () {
+  var args = Array.prototype.slice.call(arguments);
+  var filename = args.shift();
+  var cb;
+  var opts = {filename: filename};
+  var data;
+  var viewOpts;
+
+  // Do we have a callback?
+  if (typeof arguments[arguments.length - 1] == 'function') {
+    cb = args.pop();
+  }
+  // Do we have data/opts?
+  if (args.length) {
+    // Should always have data obj
+    data = args.shift();
+    // Normal passed opts (data obj + opts obj)
+    if (args.length) {
+      // Use shallowCopy so we don't pollute passed in opts obj with new vals
+      utils.shallowCopy(opts, args.pop());
+    }
+    // Special casing for Express (settings + opts-in-data)
+    else {
+      // Express 3 and 4
+      if (data.settings) {
+        // Pull a few things from known locations
+        if (data.settings.views) {
+          opts.views = data.settings.views;
+        }
+        if (data.settings['view cache']) {
+          opts.cache = true;
+        }
+        // Undocumented after Express 2, but still usable, esp. for
+        // items that are unsafe to be passed along with data, like `root`
+        viewOpts = data.settings['view options'];
+        if (viewOpts) {
+          utils.shallowCopy(opts, viewOpts);
+        }
+      }
+      // Express 2 and lower, values set in app.locals, or people who just
+      // want to pass options in their data. NOTE: These values will override
+      // anything previously set in settings  or settings['view options']
+      utils.shallowCopyFromList(opts, data, _OPTS_PASSABLE_WITH_DATA_EXPRESS);
+    }
+    opts.filename = filename;
+  }
+  else {
+    data = {};
+  }
+
+  return tryHandleCache(opts, data, cb);
+}, path=undefined
+2019-11-20T16:52:22.981Z - info: 500 GET /login 31ms
+2019-11-20T16:54:01.329Z - info: Listening on port 8080
+2019-11-20T16:54:03.171Z - info: 200 GET /login 25ms
+2019-11-20T16:54:06.772Z - info: 200 GET /register 4ms
+2019-11-20T16:54:07.523Z - info: 304 GET /login 1ms
+2019-11-20T16:54:10.696Z - info: 302 POST /login 38ms
+2019-11-20T16:54:10.707Z - info: 302 GET / 1ms
+2019-11-20T16:54:10.718Z - info: 200 GET /gallery 1ms
+2019-11-20T16:54:15.919Z - info: 200 GET /login 2ms
+2019-11-20T16:54:20.538Z - info: 302 POST /login 2ms
+2019-11-20T16:54:20.552Z - info: 302 GET / 1ms
+2019-11-20T16:54:20.564Z - info: 304 GET /gallery 1ms
+2019-11-20T16:54:25.388Z - info: 302 GET /logout 1ms
+2019-11-20T16:54:25.402Z - info: 302 GET / 0ms
+2019-11-20T16:54:25.409Z - info: 304 GET /gallery 1ms
+2019-11-20T16:54:41.405Z - info: 200 GET /login 2ms
+2019-11-20T16:55:41.422Z - info: Listening on port 8080
+2019-11-20T16:55:42.644Z - info: 200 GET /login 29ms
+2019-11-20T16:56:31.358Z - info: 200 GET /login 4ms
+2019-11-20T16:56:32.378Z - info: 304 GET /login 3ms
+2019-11-20T16:56:34.245Z - info: 200 GET /register 5ms
+2019-11-20T16:56:35.302Z - info: 304 GET /login 3ms
+2019-11-20T16:57:27.373Z - info: 200 GET /login 3ms
+2019-11-20T16:58:04.692Z - info: 200 GET /login 3ms
+2019-11-20T16:58:38.334Z - info: 200 GET /login 2ms
+2019-11-20T16:58:39.403Z - info: 200 GET /register 2ms
+2019-11-20T16:58:40.618Z - info: 304 GET /login 2ms
+2019-11-20T17:04:36.522Z - info: Listening on port 8080
+2019-11-20T17:04:40.808Z - info: 200 GET /planning 31ms

@@ -1,0 +1,18 @@
+{
+    "name": "app-tourisme",
+    "version": "0.1.0",
+    "description": "Application Tourisme",
+    "dependencies": {
+        "body-parser": "~1.19",
+        "cookie-parser": "~1.4",
+        "express": "~4.17",
+        "ejs": "~2.7",
+        "esm": "~3.2",
+        "mysql": "~2.17",
+        "querystring": "~0.2",
+        "request": "~2.88",
+        "glob": "~7.1",
+        "winston": "~2.*",
+        "express-winston": "~2.*"
+    }
+}
