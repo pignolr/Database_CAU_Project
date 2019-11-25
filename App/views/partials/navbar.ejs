@@ -1,0 +1,17 @@
+<div class="topnav">
+    <a class="active" href="/monuments/gallery">Gallery</a>
+    <div class="search-container">
+        <form action="/monuments/gallery">
+            <input type="text" placeholder="Search..." name="search"/>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="topnav-right">
+        <% if (username === undefined) { %>
+            <a href="/auth/login">Log-in</a>
+        <% } else { %>
+            <a href="/users/planning"><%= username %></a>        
+            <a href="/auth/logout">log-out</a>        
+        <% } %>
+    </div>
+</div>

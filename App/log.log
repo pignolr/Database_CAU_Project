@@ -529,3 +529,1721 @@ Require stack:
 2019-11-20T16:58:40.618Z - info: 304 GET /login 2ms
 2019-11-20T17:04:36.522Z - info: Listening on port 8080
 2019-11-20T17:04:40.808Z - info: 200 GET /planning 31ms
+2019-11-23T09:04:22.126Z - info: Listening on port 8080
+2019-11-23T09:04:25.346Z - info: 404 GET / 28ms
+2019-11-23T09:04:25.403Z - info: 404 GET /favicon.ico 2ms
+2019-11-23T09:04:30.108Z - info: 404 GET /gallery 2ms
+2019-11-23T09:04:35.805Z - info: 200 GET /login 4ms
+2019-11-23T09:04:35.819Z - error: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:170:12)
+    at done (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1008:10)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:260:5)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3) message=Can't set headers after they are sent., stack=Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:170:12)
+    at done (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1008:10)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:260:5)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+2019-11-23T09:04:42.848Z - info: 404 GET /gallery 2ms
+2019-11-23T09:04:46.449Z - info: 404 GET /profil 5ms
+2019-11-23T09:09:16.812Z - info: Listening on port 8080
+2019-11-23T09:09:21.045Z - info: 404 GET /profil 14ms
+2019-11-23T09:09:39.061Z - info: 404 GET /page-not-found 35ms
+2019-11-23T09:09:43.780Z - info: 200 GET /gallery 2ms
+2019-11-23T09:10:04.988Z - info: 304 GET /gallery 3ms
+2019-11-23T09:10:09.131Z - info: Listening on port 8080
+2019-11-23T09:10:10.378Z - info: 200 GET /gallery 45ms
+2019-11-23T09:10:16.567Z - info: 404 GET /profils 4ms
+2019-11-23T09:10:18.758Z - info: 404 GET /profil 2ms
+2019-11-23T09:11:09.363Z - info: 404 GET /page-not-found 3ms
+2019-11-23T09:13:41.268Z - info: Listening on port 8080
+2019-11-23T09:13:47.305Z - info: 302 GET /monuments 17ms
+2019-11-23T09:13:47.340Z - info: 200 GET /monuments/gallery 24ms
+2019-11-23T09:13:48.869Z - info: 304 GET /monuments/gallery 3ms
+2019-11-23T09:13:51.904Z - info: 200 GET /monuments/profil 4ms
+2019-11-23T09:22:27.548Z - info: Listening on port 8080
+2019-11-23T09:22:32.414Z - info: 404 GET /monuments/profil 11ms
+2019-11-23T09:22:39.048Z - info: 404 GET /monuments/profil/ 2ms
+2019-11-23T09:22:41.619Z - info: 200 GET /monuments/profil/14 43ms
+2019-11-23T09:39:21.380Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:20
+    18| 
+    19|     <body>
+ >> 20|         <% if (user === undefined) { %>
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+    23|             <a href="/users/planning"><%= user %></a>        
+
+user is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:12:8)
+    at profilMonument (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/profilMonument.js:11:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:20
+    18| 
+    19|     <body>
+ >> 20|         <% if (user === undefined) { %>
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+    23|             <a href="/users/planning"><%= user %></a>        
+
+user is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:20
+    18| 
+    19|     <body>
+ >> 20|         <% if (user === undefined) { %>
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+    23|             <a href="/users/planning"><%= user %></a>        
+
+user is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:12:8)
+    at profilMonument (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/profilMonument.js:11:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs
+2019-11-23T09:39:21.386Z - info: 500 GET /monuments/profil/0 10ms
+2019-11-23T09:39:38.447Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:20
+    18| 
+    19|     <body>
+ >> 20|         <% if (user === undefined) { %>
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+    23|             <a href="/users/planning"><%= user %></a>        
+
+user is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:12:8)
+    at profilMonument (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/profilMonument.js:11:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:20
+    18| 
+    19|     <body>
+ >> 20|         <% if (user === undefined) { %>
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+    23|             <a href="/users/planning"><%= user %></a>        
+
+user is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:20
+    18| 
+    19|     <body>
+ >> 20|         <% if (user === undefined) { %>
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+    23|             <a href="/users/planning"><%= user %></a>        
+
+user is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:12:8)
+    at profilMonument (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/profilMonument.js:11:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs
+2019-11-23T09:39:38.451Z - info: 500 GET /monuments/profil/0 6ms
+2019-11-23T09:39:46.517Z - info: Listening on port 8080
+2019-11-23T09:40:29.603Z - info: Listening on port 8080
+2019-11-23T09:40:29.905Z - info: 200 GET /monuments/profil/14 44ms
+2019-11-23T09:40:37.723Z - info: 200 GET /auth/login 3ms
+2019-11-23T09:40:42.230Z - info: 404 POST /login 38ms
+2019-11-23T09:40:50.365Z - info: 404 POST /login 2ms
+2019-11-23T09:41:49.066Z - info: Listening on port 8080
+2019-11-23T09:41:51.846Z - info: 404 POST /login 35ms
+2019-11-23T09:41:54.549Z - info: 404 GET /login 5ms
+2019-11-23T09:42:04.194Z - info: 404 GET /auth.login 1ms
+2019-11-23T09:42:08.769Z - info: 200 GET /auth/login 43ms
+2019-11-23T09:42:10.647Z - info: 302 POST /auth/login 17ms
+2019-11-23T09:42:10.661Z - info: 302 GET / 2ms
+2019-11-23T09:42:10.669Z - info: 304 GET /monuments/gallery 2ms
+2019-11-23T09:42:16.966Z - info: 200 GET /monuments/profil/0 4ms
+2019-11-23T09:42:53.292Z - info: Listening on port 8080
+2019-11-23T09:42:54.909Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:23
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+ >> 23|             <a href="/users/planning"><%= user %></a>        
+    24|             <a href="/auth/logout">Log-out</a>        
+    25|         <% } %>
+    26|         <h1><%= monument.name %></h1>
+
+user is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:18:26)
+    at profilMonument (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/profilMonument.js:12:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:23
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+ >> 23|             <a href="/users/planning"><%= user %></a>        
+    24|             <a href="/auth/logout">Log-out</a>        
+    25|         <% } %>
+    26|         <h1><%= monument.name %></h1>
+
+user is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:23
+    21|             <a href="/auth/login">Log-in</a>
+    22|         <% } else { %>
+ >> 23|             <a href="/users/planning"><%= user %></a>        
+    24|             <a href="/auth/logout">Log-out</a>        
+    25|         <% } %>
+    26|         <h1><%= monument.name %></h1>
+
+user is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs:18:26)
+    at profilMonument (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/profilMonument.js:12:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs
+2019-11-23T09:42:54.914Z - info: 500 GET /monuments/profil/0 31ms
+2019-11-23T09:43:18.608Z - info: Listening on port 8080
+2019-11-23T09:43:18.709Z - info: 200 GET /monuments/profil/0 35ms
+2019-11-23T09:43:42.569Z - info: 200 GET /monuments/profil/0 3ms
+2019-11-23T09:47:03.272Z - info: Listening on port 8080
+2019-11-23T09:47:04.847Z - info: 200 GET /monuments/profil/0 26ms
+2019-11-23T09:47:21.924Z - info: Listening on port 8080
+2019-11-23T09:47:22.124Z - info: 200 GET /monuments/profil/0 36ms
+2019-11-23T10:01:25.632Z - info: Listening on port 8080
+2019-11-23T10:01:27.167Z - info: 200 GET /monuments/profil/0 41ms
+2019-11-23T10:01:36.030Z - info: 200 GET /auth/login 4ms
+2019-11-23T10:01:38.199Z - info: 302 POST /auth/login 45ms
+2019-11-23T10:01:38.208Z - info: 302 GET / 1ms
+2019-11-23T10:01:38.214Z - info: 304 GET /monuments/gallery 1ms
+2019-11-23T10:01:45.910Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T10:04:33.489Z - info: Listening on port 8080
+2019-11-23T10:04:37.939Z - info: 200 GET /monuments/profil/0 46ms
+2019-11-23T10:04:37.972Z - info: 404 GET /monuments/css/styles.css 2ms
+2019-11-23T10:04:46.857Z - info: Listening on port 8080
+2019-11-23T10:04:47.623Z - info: 200 GET /monuments/profil/0 24ms
+2019-11-23T10:04:47.665Z - info: 404 GET /monuments/profil/css/styles.css 4ms
+2019-11-23T10:05:56.187Z - info: Listening on port 8080
+2019-11-23T10:05:58.023Z - info: 200 GET /monuments/profil/0 23ms
+2019-11-23T10:05:58.039Z - info: 404 GET /monuments/profil/css/styles.css 2ms
+2019-11-23T10:06:04.778Z - info: 404 GET /monuments/profil/css/styles.css 2ms
+2019-11-23T10:06:31.043Z - info: Listening on port 8080
+2019-11-23T10:06:32.492Z - info: 200 GET /monuments/profil/0 48ms
+2019-11-23T10:06:32.512Z - info: 404 GET /monuments/profil/css/styles.css 2ms
+2019-11-23T10:06:36.527Z - info: 404 GET /monuments/profil/css/styles.css 3ms
+2019-11-23T10:08:42.757Z - info: Listening on port 8080
+2019-11-23T10:08:45.094Z - info: 304 GET /monuments/profil/0 23ms
+2019-11-23T10:08:45.119Z - info: 404 GET /monuments/profil/css/styles.css 2ms
+2019-11-23T10:08:56.261Z - info: 404 GET /monuments/profil/css/styles.css 3ms
+2019-11-23T10:10:39.493Z - info: Listening on port 8080
+2019-11-23T10:10:40.973Z - info: 200 GET /monuments/profil/0 30ms
+2019-11-23T10:10:41.020Z - info: 404 GET /monuments/profil/css/styles.css 2ms
+2019-11-23T10:10:48.725Z - info: 404 GET /monuments/profil/css/styles.css 4ms
+2019-11-23T10:10:49.625Z - info: 404 GET /monuments/profil/css/styles.css 0ms
+2019-11-23T10:10:56.307Z - info: 200 GET /css/styles.css 3ms
+2019-11-23T10:11:48.826Z - info: Listening on port 8080
+2019-11-23T10:11:52.518Z - info: 304 GET /monuments/profil/0 32ms
+2019-11-23T10:11:52.545Z - info: 404 GET /monuments/profil/css/styles.css 2ms
+2019-11-23T10:11:54.283Z - info: 404 GET /monuments/profil/css/styles.css 3ms
+2019-11-23T10:13:09.959Z - info: Listening on port 8080
+2019-11-23T10:13:12.130Z - info: 200 GET /monuments/profil/0 26ms
+2019-11-23T10:13:15.424Z - info: 304 GET /monuments/profil/0 3ms
+2019-11-23T10:13:15.451Z - info: 304 GET /css/styles.css 2ms
+2019-11-23T10:14:01.395Z - info: Listening on port 8080
+2019-11-23T10:14:02.430Z - info: 200 GET /monuments/profil/0 42ms
+2019-11-23T10:14:02.468Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T10:14:12.654Z - info: Listening on port 8080
+2019-11-23T10:16:39.595Z - info: Listening on port 8080
+2019-11-23T10:16:42.609Z - info: 200 GET /monuments/profil/0 45ms
+2019-11-23T10:16:42.624Z - info: 200 GET /css/styles.css 4ms
+2019-11-23T10:16:54.572Z - info: 200 GET /auth/login 8ms
+2019-11-23T10:16:58.233Z - info: 302 POST /auth/login 57ms
+2019-11-23T10:16:58.243Z - info: 302 GET / 2ms
+2019-11-23T10:16:58.258Z - info: 304 GET /monuments/gallery 2ms
+2019-11-23T10:17:10.309Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T10:17:10.337Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T10:17:14.606Z - info: 200 GET /users/planning 2ms
+2019-11-23T10:19:00.140Z - info: Listening on port 8080
+2019-11-23T10:19:01.020Z - info: 200 GET /monuments/profil/0 24ms
+2019-11-23T10:19:01.041Z - info: 304 GET /css/styles.css 2ms
+2019-11-23T10:19:06.066Z - info: 304 GET /monuments/gallery 2ms
+2019-11-23T10:29:30.975Z - info: Listening on port 8080
+2019-11-23T10:29:34.159Z - info: 200 GET /monuments/profil/0 28ms
+2019-11-23T10:29:34.187Z - info: 200 GET /css/styles.css 4ms
+2019-11-23T10:30:06.221Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T10:30:06.236Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T10:30:06.483Z - info: 404 GET /favicon.ico 7ms
+2019-11-23T10:30:10.980Z - info: Listening on port 8080
+2019-11-23T10:30:12.563Z - info: 304 GET /monuments/profil/0 27ms
+2019-11-23T10:30:12.580Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T10:30:12.846Z - info: 404 GET /favicon.ico 1ms
+2019-11-23T10:32:03.316Z - info: Listening on port 8080
+2019-11-23T10:32:04.064Z - info: 200 GET /monuments/profil/0 29ms
+2019-11-23T10:32:06.899Z - info: 304 GET /monuments/profil/0 2ms
+2019-11-23T10:32:06.919Z - info: 200 GET /css/styles.css 4ms
+2019-11-23T10:32:07.213Z - info: 404 GET /favicon.ico 9ms
+2019-11-23T15:51:11.848Z - info: Listening on port 8080
+2019-11-23T15:51:14.980Z - error: SyntaxError: Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-23T15:51:14.985Z - info: 500 GET /monuments/profil/0 47ms
+2019-11-23T15:52:16.017Z - info: Listening on port 8080
+2019-11-23T15:52:16.781Z - error: SyntaxError: Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-23T15:52:16.786Z - info: 500 GET /monuments/profil/0 34ms
+2019-11-23T15:53:08.418Z - info: Listening on port 8080
+2019-11-23T15:53:08.874Z - error: SyntaxError: Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token ) in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/profilMonument.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-23T15:53:08.881Z - info: 500 GET /monuments/profil/0 53ms
+2019-11-23T15:53:54.819Z - info: Listening on port 8080
+2019-11-23T15:53:55.363Z - info: 200 GET /monuments/profil/0 49ms
+2019-11-23T15:53:55.435Z - info: 200 GET /css/styles.css 6ms
+2019-11-23T15:53:55.865Z - info: 404 GET /favicon.ico 3ms
+2019-11-23T15:54:15.101Z - info: Listening on port 8080
+2019-11-23T15:54:15.591Z - info: 200 GET /monuments/profil/0 107ms
+2019-11-23T15:54:16.969Z - info: 304 GET /monuments/profil/0 2ms
+2019-11-23T15:54:17.041Z - info: 200 GET /css/styles.css 4ms
+2019-11-23T15:54:52.665Z - info: 200 GET /monuments/profil/0 5ms
+2019-11-23T15:54:53.842Z - info: 304 GET /monuments/profil/0 5ms
+2019-11-23T15:54:53.900Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T15:55:11.493Z - info: 200 GET /monuments/profil/0 6ms
+2019-11-23T15:55:11.569Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T15:55:14.338Z - info: 200 GET /monuments/profil/0 8ms
+2019-11-23T15:55:51.644Z - info: 200 GET /monuments/profil/0 6ms
+2019-11-23T15:55:51.685Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:00:04.667Z - info: 200 GET /monuments/profil/0 3ms
+2019-11-23T16:00:04.689Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:00:05.128Z - info: 404 GET /favicon.ico 4ms
+2019-11-23T16:00:26.972Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T16:00:27.000Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:04:24.887Z - info: 200 GET /monuments/profil/0 3ms
+2019-11-23T16:04:24.950Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:07:39.176Z - info: Listening on port 8080
+2019-11-23T16:07:40.009Z - info: 200 GET /monuments/profil/0 33ms
+2019-11-23T16:07:40.048Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:08:46.539Z - info: Listening on port 8080
+2019-11-23T16:08:48.129Z - info: 200 GET /monuments/profil/0 28ms
+2019-11-23T16:08:48.159Z - info: 304 GET /css/styles.css 2ms
+2019-11-23T16:08:56.150Z - info: 200 GET /monuments/profil/0 4ms
+2019-11-23T16:11:22.083Z - info: 200 GET /monuments/profil/0 3ms
+2019-11-23T16:11:22.115Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:11:28.679Z - info: 304 GET /monuments/profil/0 2ms
+2019-11-23T16:11:28.727Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:11:47.984Z - info: 304 GET /monuments/profil/0 2ms
+2019-11-23T16:11:48.002Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:12:49.101Z - info: 304 GET /monuments/profil/0 2ms
+2019-11-23T16:12:49.163Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:13:11.926Z - info: 304 GET /monuments/profil/0 3ms
+2019-11-23T16:13:11.985Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:14:58.507Z - info: Listening on port 8080
+2019-11-23T16:14:59.992Z - info: 200 GET /monuments/profil/0 28ms
+2019-11-23T16:15:00.091Z - info: 304 GET /css/styles.css 2ms
+2019-11-23T16:15:35.040Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T16:15:35.087Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:16:11.763Z - info: 304 GET /monuments/profil/0 3ms
+2019-11-23T16:16:11.802Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:17:19.005Z - info: 200 GET /monuments/profil/0 4ms
+2019-11-23T16:17:19.027Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:18:46.614Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T16:18:46.663Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:19:55.020Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T16:19:55.070Z - info: 200 GET /css/styles.css 5ms
+2019-11-23T16:22:07.589Z - info: 304 GET /monuments/profil/0 3ms
+2019-11-23T16:22:07.646Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:23:52.175Z - info: 304 GET /monuments/profil/0 7ms
+2019-11-23T16:23:52.235Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:24:07.674Z - info: 304 GET /monuments/profil/0 5ms
+2019-11-23T16:24:07.704Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:24:08.217Z - info: 304 GET /monuments/profil/0 3ms
+2019-11-23T16:24:08.251Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:24:19.131Z - info: 304 GET /monuments/profil/0 2ms
+2019-11-23T16:24:19.155Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:25:07.174Z - info: 200 GET /monuments/profil/0 6ms
+2019-11-23T16:25:07.204Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:25:51.268Z - info: 200 GET /monuments/profil/0 5ms
+2019-11-23T16:25:51.301Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:26:21.182Z - info: 200 GET /monuments/profil/0 7ms
+2019-11-23T16:26:53.964Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T16:26:53.983Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:27:47.794Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T16:27:47.820Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:28:29.668Z - info: 304 GET /monuments/gallery 4ms
+2019-11-23T16:29:34.274Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:23
+    21|             <a class="active" href="/monuments/gallery">Gallery</a>
+    22|             <div class="topnav-right">
+ >> 23|                 <% if (username === undefined) { %>
+    24|                     <a href="/auth/login">Log-in</a>
+    25|                 <% } else { %>
+    26|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:12:8)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:13:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:23
+    21|             <a class="active" href="/monuments/gallery">Gallery</a>
+    22|             <div class="topnav-right">
+ >> 23|                 <% if (username === undefined) { %>
+    24|                     <a href="/auth/login">Log-in</a>
+    25|                 <% } else { %>
+    26|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:23
+    21|             <a class="active" href="/monuments/gallery">Gallery</a>
+    22|             <div class="topnav-right">
+ >> 23|                 <% if (username === undefined) { %>
+    24|                     <a href="/auth/login">Log-in</a>
+    25|                 <% } else { %>
+    26|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:12:8)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:13:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs
+2019-11-23T16:29:34.277Z - info: 500 GET /monuments/gallery 14ms
+2019-11-23T16:30:27.652Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:23
+    21|             <a class="active" href="/monuments/gallery">Gallery</a>
+    22|             <div class="topnav-right">
+ >> 23|                 <% if (username === undefined) { %>
+    24|                     <a href="/auth/login">Log-in</a>
+    25|                 <% } else { %>
+    26|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:12:8)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:13:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:23
+    21|             <a class="active" href="/monuments/gallery">Gallery</a>
+    22|             <div class="topnav-right">
+ >> 23|                 <% if (username === undefined) { %>
+    24|                     <a href="/auth/login">Log-in</a>
+    25|                 <% } else { %>
+    26|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:23
+    21|             <a class="active" href="/monuments/gallery">Gallery</a>
+    22|             <div class="topnav-right">
+ >> 23|                 <% if (username === undefined) { %>
+    24|                     <a href="/auth/login">Log-in</a>
+    25|                 <% } else { %>
+    26|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:12:8)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:13:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs
+2019-11-23T16:30:27.655Z - info: 500 GET /monuments/gallery 6ms
+2019-11-23T16:30:32.267Z - info: Listening on port 8080
+2019-11-23T16:30:33.168Z - info: 200 GET /monuments/gallery 44ms
+2019-11-23T16:33:45.288Z - info: 200 GET /monuments/gallery 5ms
+2019-11-23T16:33:45.323Z - info: 200 GET /css/styles.css 4ms
+2019-11-23T16:33:47.758Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/auth/login.ejs:13
+    11|             <a class="active" href="/monuments/gallery">Gallery</a>
+    12|             <div class="topnav-right">
+ >> 13|                 <% if (username === undefined) { %>
+    14|                     <a href="/auth/login">Log-in</a>
+    15|                 <% } else { %>
+    16|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/auth/login.ejs:12:8)
+    at login (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/auth/login.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/auth/login.ejs:13
+    11|             <a class="active" href="/monuments/gallery">Gallery</a>
+    12|             <div class="topnav-right">
+ >> 13|                 <% if (username === undefined) { %>
+    14|                     <a href="/auth/login">Log-in</a>
+    15|                 <% } else { %>
+    16|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/auth/login.ejs:13
+    11|             <a class="active" href="/monuments/gallery">Gallery</a>
+    12|             <div class="topnav-right">
+ >> 13|                 <% if (username === undefined) { %>
+    14|                     <a href="/auth/login">Log-in</a>
+    15|                 <% } else { %>
+    16|                     <a href="/users/planning"><%= username %></a>        
+
+username is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/auth/login.ejs:12:8)
+    at login (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/auth/login.js:5:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/auth/login.ejs
+2019-11-23T16:33:47.764Z - info: 500 GET /auth/login 22ms
+2019-11-23T16:36:23.953Z - info: Listening on port 8080
+2019-11-23T16:36:24.740Z - info: 200 GET /auth/login 38ms
+2019-11-23T16:36:24.770Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:36:26.956Z - info: 304 GET /auth/login 8ms
+2019-11-23T16:36:26.998Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:36:28.831Z - info: 302 POST /auth/login 32ms
+2019-11-23T16:36:28.839Z - info: 302 GET / 1ms
+2019-11-23T16:36:28.851Z - info: 200 GET /monuments/gallery 2ms
+2019-11-23T16:36:28.877Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:36:33.452Z - info: 200 GET /users/planning 4ms
+2019-11-23T16:36:33.481Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:36:34.833Z - info: 304 GET /users/planning 3ms
+2019-11-23T16:36:34.870Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:36:36.119Z - info: 304 GET /monuments/gallery 3ms
+2019-11-23T16:36:36.171Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:36:37.615Z - info: 302 GET /auth/logout 3ms
+2019-11-23T16:36:37.640Z - info: 302 GET / 2ms
+2019-11-23T16:36:37.735Z - info: 200 GET /monuments/gallery 2ms
+2019-11-23T16:36:37.760Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:36:39.735Z - info: 200 GET /auth/login 4ms
+2019-11-23T16:36:39.784Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:36:42.174Z - info: 302 POST /auth/login 2ms
+2019-11-23T16:36:42.190Z - info: 302 GET / 0ms
+2019-11-23T16:36:42.203Z - info: 200 GET /monuments/gallery 2ms
+2019-11-23T16:36:42.242Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:36:49.509Z - info: 200 GET /monuments/profil/0 4ms
+2019-11-23T16:36:49.535Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:36:53.245Z - info: 302 GET /monuments/profil/ 1ms
+2019-11-23T16:36:53.256Z - info: 404 GET /monuments/profil/errors/page-not-found 2ms
+2019-11-23T16:37:16.851Z - info: 404 GET /monuments/profil/errors/page-not-found 2ms
+2019-11-23T16:37:24.061Z - info: Listening on port 8080
+2019-11-23T16:37:25.689Z - info: 302 GET /monuments/profil/ 12ms
+2019-11-23T16:37:25.739Z - info: 404 GET /errors/page-not-found 27ms
+2019-11-23T16:37:30.824Z - info: 404 GET /errors/page-not-found 3ms
+2019-11-23T16:38:25.950Z - info: 404 GET /errors/page-not-found 3ms
+2019-11-23T16:38:25.978Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:38:57.975Z - info: 404 GET /login 6ms
+2019-11-23T16:39:40.304Z - info: 404 GET /errors/page-not-found 3ms
+2019-11-23T16:39:40.332Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:39:49.212Z - info: 404 GET /errors/page-not-found 3ms
+2019-11-23T16:39:49.239Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:39:53.035Z - info: 304 GET /users/planning 4ms
+2019-11-23T16:39:53.073Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:39:54.035Z - info: 302 GET /auth/logout 2ms
+2019-11-23T16:39:54.047Z - info: 302 GET / 1ms
+2019-11-23T16:39:54.057Z - info: 200 GET /monuments/gallery 1ms
+2019-11-23T16:39:54.093Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:39:55.146Z - info: 200 GET /auth/login 2ms
+2019-11-23T16:39:55.231Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:41:16.404Z - info: 200 GET /auth/login 3ms
+2019-11-23T16:41:16.431Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:42:19.723Z - info: 200 GET /auth/login 5ms
+2019-11-23T16:42:19.764Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:42:58.736Z - info: 304 GET /auth/login 3ms
+2019-11-23T16:42:58.784Z - info: 200 GET /css/styles.css 3ms
+2019-11-23T16:43:07.256Z - info: 304 GET /auth/login 3ms
+2019-11-23T16:43:07.283Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:43:18.580Z - info: 404 GET /profil/0 1ms
+2019-11-23T16:43:23.901Z - info: 200 GET /monuments/profil/0 2ms
+2019-11-23T16:43:23.943Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:44:18.337Z - info: 304 GET /monuments/profil/0 4ms
+2019-11-23T16:44:18.398Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:44:21.840Z - info: 304 GET /auth/login 3ms
+2019-11-23T16:44:21.871Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:44:28.486Z - info: 304 GET /monuments/profil/0 5ms
+2019-11-23T16:44:28.514Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:44:32.185Z - info: 304 GET /auth/login 4ms
+2019-11-23T16:44:32.209Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:45:12.063Z - info: 304 GET /auth/login 2ms
+2019-11-23T16:45:12.096Z - info: 200 GET /css/styles.css 1ms
+2019-11-23T16:45:13.588Z - info: 304 GET /monuments/profil/0 6ms
+2019-11-23T16:45:13.641Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:45:21.193Z - info: 304 GET /monuments/profil/0 5ms
+2019-11-23T16:45:21.216Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T16:45:38.012Z - info: 200 GET /auth/register 3ms
+2019-11-23T16:45:38.043Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:46:13.965Z - info: 200 GET /auth/register 4ms
+2019-11-23T16:46:13.995Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T16:46:33.224Z - info: 200 GET /auth/register 3ms
+2019-11-23T16:46:33.251Z - info: 304 GET /css/styles.css 1ms
+2019-11-23T17:00:55.333Z - info: 304 GET /auth/register 2ms
+2019-11-23T17:00:55.364Z - info: 304 GET /css/styles.css 0ms
+2019-11-23T17:00:57.997Z - info: 302 POST /auth/register 23ms
+2019-11-23T17:00:58.006Z - info: 302 GET / 1ms
+2019-11-23T17:00:58.014Z - info: 200 GET /monuments/gallery 1ms
+2019-11-23T17:00:58.042Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T08:58:21.486Z - info: Listening on port 8080
+2019-11-25T08:58:24.432Z - info: 302 GET / 14ms
+2019-11-25T08:58:24.470Z - info: 200 GET /monuments/gallery 30ms
+2019-11-25T08:58:24.504Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T08:59:00.128Z - info: 200 GET /monuments/gallery 8ms
+2019-11-25T08:59:00.164Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T08:59:14.296Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T08:59:14.339Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T08:59:39.476Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T08:59:41.927Z - info: 304 GET /monuments/gallery 2ms
+2019-11-25T08:59:41.980Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T08:59:42.417Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T08:59:42.445Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T08:59:42.611Z - info: 304 GET /monuments/gallery 7ms
+2019-11-25T08:59:42.632Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T09:01:52.208Z - info: 200 GET /monuments/gallery 1ms
+2019-11-25T09:01:52.230Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T09:02:14.912Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T09:02:14.964Z - info: 200 GET /css/styles.css 5ms
+2019-11-25T09:03:23.269Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T09:03:23.288Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T09:03:52.150Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T09:03:52.179Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T09:03:52.830Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T09:03:52.847Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T09:03:56.757Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T09:05:17.966Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T09:05:17.982Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T09:06:54.137Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T09:06:54.153Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T09:08:05.480Z - info: 304 GET /monuments/gallery 4ms
+2019-11-25T09:08:05.511Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T09:08:05.544Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T09:08:05.572Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T09:09:34.705Z - info: 200 GET /monuments/gallery 5ms
+2019-11-25T09:09:34.733Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T09:09:37.387Z - info: 200 GET /monuments/gallery 5ms
+2019-11-25T13:58:38.728Z - info: Listening on port 8080
+2019-11-25T13:58:42.537Z - error: { TypeError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:37
+    35|                 </thead>
+    36|                 <tbody>
+ >> 37|                     <% monuments.foreach(monument => { %>
+    38|                         <tr>
+    39|                             <td>
+    40|                                 <img src="<%= monument.picture %>" href="<%= monument.profil %>"/>
+
+monuments.foreach is not a function
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:30:18)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:53:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:37
+    35|                 </thead>
+    36|                 <tbody>
+ >> 37|                     <% monuments.foreach(monument => { %>
+    38|                         <tr>
+    39|                             <td>
+    40|                                 <img src="<%= monument.picture %>" href="<%= monument.profil %>"/>
+
+monuments.foreach is not a function, stack=TypeError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:37
+    35|                 </thead>
+    36|                 <tbody>
+ >> 37|                     <% monuments.foreach(monument => { %>
+    38|                         <tr>
+    39|                             <td>
+    40|                                 <img src="<%= monument.picture %>" href="<%= monument.profil %>"/>
+
+monuments.foreach is not a function
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:30:18)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:53:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs
+2019-11-25T13:58:42.543Z - info: 500 GET /monuments/gallery 52ms
+2019-11-25T13:59:13.921Z - info: Listening on port 8080
+2019-11-25T13:59:18.990Z - info: 200 GET /monuments/gallery 37ms
+2019-11-25T13:59:19.015Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T13:59:19.170Z - info: 404 GET /favicon.ico 9ms
+2019-11-25T13:59:59.483Z - info: 304 GET /monuments/profil/0 9ms
+2019-11-25T13:59:59.538Z - info: 200 GET /css/styles.css 5ms
+2019-11-25T13:59:59.553Z - info: 404 GET /favicon.ico 1ms
+2019-11-25T14:00:05.843Z - info: 200 GET /monuments/profil/0 7ms
+2019-11-25T14:00:05.880Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:02:10.172Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T14:02:10.197Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:03:19.069Z - info: 200 GET /monuments/gallery 8ms
+2019-11-25T14:03:19.088Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:03:47.286Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T14:03:47.312Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:04:25.935Z - info: 200 GET /monuments/gallery 7ms
+2019-11-25T14:04:25.960Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:04:43.268Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T14:04:43.288Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:04:47.536Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T14:05:42.495Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T14:05:43.280Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T14:05:43.355Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:06:01.307Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T14:06:01.324Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:06:09.041Z - info: 200 GET /monuments/gallery 8ms
+2019-11-25T14:06:09.063Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:06:16.543Z - info: 200 GET /monuments/gallery 8ms
+2019-11-25T14:06:16.566Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:06:45.979Z - info: 200 GET /monuments/gallery 9ms
+2019-11-25T14:06:46.001Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:06:57.296Z - info: 200 GET /monuments/gallery 5ms
+2019-11-25T14:06:57.320Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:07:21.152Z - info: 200 GET /monuments/gallery 7ms
+2019-11-25T14:07:21.198Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:07:56.778Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T14:07:56.801Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:10:18.248Z - info: 200 GET /monuments/gallery 9ms
+2019-11-25T14:10:18.274Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:10:46.191Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T14:10:46.213Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T14:12:30.697Z - info: 304 GET /monuments/gallery 1ms
+2019-11-25T14:12:30.715Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:12:40.775Z - info: 200 GET /monuments/profil/0 1ms
+2019-11-25T14:12:40.801Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:12:47.907Z - info: 304 GET /monuments/profil/0 2ms
+2019-11-25T14:12:47.926Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:13:05.134Z - info: Listening on port 8080
+2019-11-25T14:13:06.391Z - info: 200 GET /monuments/gallery 39ms
+2019-11-25T14:13:06.414Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:13:54.298Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T14:13:54.323Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:14:01.495Z - info: 200 GET /monuments/gallery 7ms
+2019-11-25T14:14:01.538Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:36:31.915Z - info: 200 GET /monuments/gallery 7ms
+2019-11-25T14:36:31.956Z - info: 200 GET /css/styles.css 3ms
+2019-11-25T14:36:32.112Z - info: 404 GET /favicon.ico 7ms
+2019-11-25T14:37:56.902Z - info: 304 GET /monuments/gallery 8ms
+2019-11-25T14:37:56.921Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:48:42.251Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T14:48:42.280Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T14:48:44.208Z - info: 304 GET /monuments/profil/0 6ms
+2019-11-25T14:48:44.248Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:48:45.854Z - info: 304 GET /monuments/profil/0 12ms
+2019-11-25T14:48:45.884Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:48:47.149Z - info: 304 GET /monuments/profil/0 6ms
+2019-11-25T14:48:47.212Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:48:48.307Z - info: 304 GET /monuments/profil/0 7ms
+2019-11-25T14:48:48.361Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:49:26.438Z - info: 304 GET /monuments/gallery 5ms
+2019-11-25T14:49:26.475Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T14:50:57.717Z - info: 200 GET /monuments/gallery 9ms
+2019-11-25T14:50:57.737Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:52:31.293Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T14:52:31.313Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:53:01.697Z - info: 304 GET /monuments/gallery 7ms
+2019-11-25T14:53:01.753Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:54:09.140Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T14:54:09.193Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:54:23.819Z - info: 304 GET /monuments/gallery 7ms
+2019-11-25T14:54:23.860Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:54:35.397Z - info: 304 GET /monuments/gallery 5ms
+2019-11-25T14:54:35.419Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:54:35.563Z - info: 404 GET /favicon.ico 3ms
+2019-11-25T14:54:48.260Z - info: 304 GET /monuments/gallery 2ms
+2019-11-25T14:54:48.282Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:54:56.646Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T14:54:56.675Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:55:20.495Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T14:55:20.515Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:55:49.245Z - info: 304 GET /monuments/gallery 1ms
+2019-11-25T14:55:49.263Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:56:50.338Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T14:56:50.354Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T14:57:21.090Z - info: 304 GET /monuments/gallery 1ms
+2019-11-25T14:57:21.105Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T14:57:52.976Z - info: 304 GET /monuments/gallery 2ms
+2019-11-25T14:57:52.998Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T15:00:24.769Z - info: 200 GET /monuments/gallery?search=b 5ms
+2019-11-25T15:00:24.848Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:00:46.577Z - info: 304 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:00:46.614Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:01:41.831Z - info: 304 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:01:41.863Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:03:22.055Z - info: 200 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:03:22.083Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T15:03:49.940Z - info: 304 GET /monuments/gallery?search=b 4ms
+2019-11-25T15:03:49.967Z - info: 200 GET /css/styles.css 0ms
+2019-11-25T15:03:55.486Z - info: 304 GET /monuments/gallery?search=b 3ms
+2019-11-25T15:03:55.514Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:04:19.586Z - info: 304 GET /monuments/gallery?search=b 3ms
+2019-11-25T15:04:19.624Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T15:04:54.672Z - info: 304 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:04:54.704Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:05:27.014Z - info: 304 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:05:27.047Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:05:53.477Z - info: 304 GET /monuments/gallery?search=b 4ms
+2019-11-25T15:05:53.504Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T15:06:06.757Z - info: 304 GET /monuments/gallery?search=b 1ms
+2019-11-25T15:06:06.797Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T15:06:16.146Z - info: 304 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:06:16.179Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:06:27.360Z - info: 304 GET /monuments/gallery?search=b 3ms
+2019-11-25T15:06:27.388Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:06:42.250Z - info: 304 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:06:42.278Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:06:51.758Z - info: 304 GET /monuments/gallery?search=b 3ms
+2019-11-25T15:06:51.778Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:07:24.973Z - info: 200 GET /monuments/gallery?search=b 2ms
+2019-11-25T15:07:25.006Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:07:31.447Z - info: 200 GET /monuments/gallery?search=b 3ms
+2019-11-25T15:07:31.490Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:07:36.481Z - info: 200 GET /monuments/gallery?search=b 4ms
+2019-11-25T15:07:36.500Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:09:56.625Z - info: 200 GET /monuments/gallery?search=b 4ms
+2019-11-25T15:09:56.682Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:10:18.517Z - info: 200 GET /monuments/gallery?search=trux 3ms
+2019-11-25T15:10:18.557Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:13:33.301Z - info: Listening on port 8080
+2019-11-25T15:13:33.732Z - error: Error: Could not find the include file "include/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10) message=Could not find the include file "include/navbar.ejs", stack=Error: Could not find the include file "include/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+2019-11-25T15:13:33.741Z - info: 500 GET /monuments/gallery?search=trux 43ms
+2019-11-25T15:13:46.066Z - error: Error: Could not find the include file "&#39;include/navbar.ejs&#39;"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10) message=Could not find the include file "&#39;include/navbar.ejs&#39;", stack=Error: Could not find the include file "&#39;include/navbar.ejs&#39;"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+2019-11-25T15:13:46.072Z - info: 500 GET /monuments/gallery?search=trux 5ms
+2019-11-25T15:15:56.511Z - info: Listening on port 8080
+2019-11-25T15:15:59.183Z - error: Error: Could not find the include file "partials/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10) message=Could not find the include file "partials/navbar.ejs", stack=Error: Could not find the include file "partials/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+2019-11-25T15:15:59.188Z - info: 500 GET /monuments/gallery?search=trux 37ms
+2019-11-25T15:16:17.205Z - error: { Error: ENOENT: no such file or directory, open '/partials/navbar.ejs'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync [as fileLoader] (fs.js:551:33)
+    at fileLoader (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:273:18)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:310:14)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/partials/navbar.ejs' } message=ENOENT: no such file or directory, open '/partials/navbar.ejs', stack=Error: ENOENT: no such file or directory, open '/partials/navbar.ejs'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync [as fileLoader] (fs.js:551:33)
+    at fileLoader (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:273:18)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:310:14)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18), errno=-2, code=ENOENT, syscall=open, path=/partials/navbar.ejs
+2019-11-25T15:16:17.214Z - info: 500 GET /monuments/gallery?search=trux 12ms
+2019-11-25T15:16:29.097Z - error: { Error: ENOENT: no such file or directory, open '/partials/navbar.ejs'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync [as fileLoader] (fs.js:551:33)
+    at fileLoader (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:273:18)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:310:14)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/partials/navbar.ejs' } message=ENOENT: no such file or directory, open '/partials/navbar.ejs', stack=Error: ENOENT: no such file or directory, open '/partials/navbar.ejs'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync [as fileLoader] (fs.js:551:33)
+    at fileLoader (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:273:18)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:310:14)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18), errno=-2, code=ENOENT, syscall=open, path=/partials/navbar.ejs
+2019-11-25T15:16:29.102Z - info: 500 GET /monuments/gallery?search=trux 4ms
+2019-11-25T15:16:46.222Z - error: Error: Could not find the include file "partials/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10) message=Could not find the include file "partials/navbar.ejs", stack=Error: Could not find the include file "partials/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+2019-11-25T15:16:46.225Z - info: 500 GET /monuments/gallery?search=trux 4ms
+2019-11-25T15:18:08.087Z - error: Error: Could not find the include file "partials/navbar"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10) message=Could not find the include file "partials/navbar", stack=Error: Could not find the include file "partials/navbar"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+2019-11-25T15:18:08.089Z - info: 500 GET /monuments/gallery?search=trux 2ms
+2019-11-25T15:18:31.508Z - info: Listening on port 8080
+2019-11-25T15:18:33.316Z - error: Error: Could not find the include file "partials/navbar"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10) message=Could not find the include file "partials/navbar", stack=Error: Could not find the include file "partials/navbar"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+2019-11-25T15:18:33.322Z - info: 500 GET /monuments/gallery?search=trux 36ms
+2019-11-25T15:18:52.119Z - error: Error: Could not find the include file "partials/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10) message=Could not find the include file "partials/navbar.ejs", stack=Error: Could not find the include file "partials/navbar.ejs"
+    at getIncludePath (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:165:13)
+    at includeSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:309:17)
+    at /home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:745:26
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:721:15)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:574:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+2019-11-25T15:18:52.124Z - info: 500 GET /monuments/gallery?search=trux 5ms
+2019-11-25T15:20:53.681Z - info: 200 GET /monuments/gallery?search=trux 6ms
+2019-11-25T15:20:53.722Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T15:22:35.191Z - info: 200 GET /monuments/gallery?search=trux 4ms
+2019-11-25T15:22:35.234Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:22:37.126Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T15:22:37.154Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:22:38.794Z - info: 200 GET /monuments/gallery?search= 8ms
+2019-11-25T15:22:38.851Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:22:40.066Z - info: 200 GET /auth/login 6ms
+2019-11-25T15:22:40.110Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:22:43.436Z - info: 200 GET /auth/register 3ms
+2019-11-25T15:22:43.463Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:22:47.257Z - info: 200 GET /monuments/gallery?search=f 5ms
+2019-11-25T15:22:47.299Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:22:48.590Z - info: 200 GET /monuments/profil/0 5ms
+2019-11-25T15:22:48.617Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:23:00.523Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T15:23:00.572Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:24:09.873Z - info: Listening on port 8080
+2019-11-25T15:24:10.029Z - info: 200 GET /monuments/gallery 38ms
+2019-11-25T15:24:10.077Z - info: 304 GET /css/styles.css 3ms
+2019-11-25T15:24:55.691Z - info: 200 GET /monuments/gallery 7ms
+2019-11-25T15:24:55.725Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:25:01.377Z - info: 200 GET /monuments/gallery 9ms
+2019-11-25T15:25:01.411Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:26:00.905Z - info: 200 GET /monuments/gallery 7ms
+2019-11-25T15:26:00.953Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:26:16.716Z - info: 200 GET /monuments/gallery 5ms
+2019-11-25T15:26:16.746Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:26:39.849Z - info: 200 GET /monuments/gallery 3ms
+2019-11-25T15:26:39.877Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:27:07.342Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:27:07.370Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:29:42.933Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T15:29:42.958Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:29:58.529Z - info: 304 GET /monuments/profil/0 12ms
+2019-11-25T15:29:58.572Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:30:11.057Z - info: 200 GET /monuments/gallery 8ms
+2019-11-25T15:30:11.081Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:30:22.831Z - info: 200 GET /monuments/gallery 10ms
+2019-11-25T15:30:22.867Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:31:26.032Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T15:31:26.056Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:33:11.674Z - info: 304 GET /monuments/gallery 7ms
+2019-11-25T15:33:11.718Z - info: 200 GET /css/styles.css 4ms
+2019-11-25T15:33:24.781Z - info: 304 GET /monuments/gallery 5ms
+2019-11-25T15:33:24.815Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:33:40.785Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T15:33:40.823Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:34:36.077Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T15:34:36.103Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:34:43.996Z - info: 200 GET /monuments/gallery 2ms
+2019-11-25T15:34:44.029Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T15:35:07.758Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:35:07.791Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:35:30.707Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:35:30.747Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:35:44.299Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:35:44.331Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:35:57.573Z - info: 200 GET /monuments/gallery 6ms
+2019-11-25T15:35:57.608Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:36:19.833Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:36:19.868Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:37:29.366Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:37:29.429Z - info: 200 GET /css/styles.css 2ms
+2019-11-25T15:37:43.635Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T15:37:43.665Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:37:52.833Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T15:37:52.875Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:38:49.768Z - info: 200 GET /monuments/gallery 3ms
+2019-11-25T15:38:49.800Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:39:05.391Z - info: 200 GET /monuments/gallery 9ms
+2019-11-25T15:39:05.441Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:39:37.688Z - info: 304 GET /monuments/gallery 4ms
+2019-11-25T15:39:37.717Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:40:30.501Z - info: 200 GET /monuments/gallery 3ms
+2019-11-25T15:40:30.579Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:40:49.826Z - info: 304 GET /monuments/gallery 7ms
+2019-11-25T15:40:49.898Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:40:55.954Z - info: Listening on port 8080
+2019-11-25T15:40:57.589Z - info: 200 GET /monuments/gallery 31ms
+2019-11-25T15:40:57.614Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:42:13.153Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:42:13.201Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:42:30.615Z - info: 200 GET /monuments/gallery 3ms
+2019-11-25T15:42:30.653Z - info: 200 GET /css/styles.css 4ms
+2019-11-25T15:42:37.415Z - info: 200 GET /monuments/gallery 5ms
+2019-11-25T15:42:37.455Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:47:32.281Z - info: Listening on port 8080
+2019-11-25T15:47:33.662Z - info: 304 GET /monuments/gallery 40ms
+2019-11-25T15:47:33.694Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:48:25.530Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T15:48:25.556Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:48:29.298Z - info: Listening on port 8080
+2019-11-25T15:48:29.887Z - info: 304 GET /monuments/gallery 30ms
+2019-11-25T15:48:29.947Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T15:48:47.187Z - info: 304 GET /monuments/gallery 7ms
+2019-11-25T15:48:47.210Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:48:51.626Z - info: Listening on port 8080
+2019-11-25T15:48:52.204Z - info: 200 GET /monuments/gallery 30ms
+2019-11-25T15:48:52.253Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T15:49:55.419Z - info: Listening on port 8080
+2019-11-25T15:49:57.038Z - info: 200 GET /monuments/gallery 32ms
+2019-11-25T15:49:57.070Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:50:46.735Z - info: Listening on port 8080
+2019-11-25T15:50:46.966Z - info: 200 GET /monuments/gallery 73ms
+2019-11-25T15:50:47.010Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:50:55.083Z - info: Listening on port 8080
+2019-11-25T15:50:55.424Z - info: 200 GET /monuments/gallery 41ms
+2019-11-25T15:50:55.481Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T15:54:21.950Z - info: 200 GET /monuments/gallery 5ms
+2019-11-25T15:54:21.978Z - info: 200 GET /css/styles.css 4ms
+2019-11-25T15:54:36.477Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:54:36.515Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:54:59.884Z - info: 200 GET /monuments/gallery 4ms
+2019-11-25T15:54:59.930Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:55:07.643Z - info: 304 GET /monuments/gallery 6ms
+2019-11-25T15:55:07.679Z - info: 200 GET /css/styles.css 0ms
+2019-11-25T15:55:12.163Z - info: Listening on port 8080
+2019-11-25T15:55:12.583Z - info: 200 GET /monuments/gallery 82ms
+2019-11-25T15:55:12.656Z - info: 304 GET /css/styles.css 6ms
+2019-11-25T15:55:25.253Z - info: 304 GET /monuments/gallery 9ms
+2019-11-25T15:55:25.288Z - info: 200 GET /css/styles.css 3ms
+2019-11-25T15:55:31.976Z - info: 304 GET /monuments/gallery 3ms
+2019-11-25T15:55:32.009Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:57:22.951Z - info: 200 GET /monuments/gallery 3ms
+2019-11-25T15:57:22.979Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T15:57:54.721Z - info: 200 GET /monuments/gallery 7ms
+2019-11-25T15:57:54.758Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T15:59:24.236Z - info: 200 GET /monuments/gallery 5ms
+2019-11-25T15:59:24.259Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T16:00:44.703Z - info: 304 GET /monuments/gallery 1ms
+2019-11-25T16:00:44.723Z - info: 200 GET /css/styles.css 1ms
+2019-11-25T16:07:53.799Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:65
+    63|             </div>
+    64|         <% } %>
+ >> 65|         <%=url%>
+    66|     </body>
+    67| </html>
+    68| 
+
+url is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:79:25)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:52:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:65
+    63|             </div>
+    64|         <% } %>
+ >> 65|         <%=url%>
+    66|     </body>
+    67| </html>
+    68| 
+
+url is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:65
+    63|             </div>
+    64|         <% } %>
+ >> 65|         <%=url%>
+    66|     </body>
+    67| </html>
+    68| 
+
+url is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:79:25)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:52:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs
+2019-11-25T16:07:53.804Z - info: 500 GET /monuments/gallery 19ms
+2019-11-25T16:08:07.040Z - error: { ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:65
+    63|             </div>
+    64|         <% } %>
+ >> 65|         <%= url %>
+    66|     </body>
+    67| </html>
+    68| 
+
+url is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:79:26)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:52:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5)
+  path: '/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs' } message=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:65
+    63|             </div>
+    64|         <% } %>
+ >> 65|         <%= url %>
+    66|     </body>
+    67| </html>
+    68| 
+
+url is not defined, stack=ReferenceError: /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:65
+    63|             </div>
+    64|         <% } %>
+ >> 65|         <%= url %>
+    66|     </body>
+    67| </html>
+    68| 
+
+url is not defined
+    at eval (/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs:79:26)
+    at gallery (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:682:17)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+    at require.module.exports.Router.get.get.get (/home/freji/Documents/CAU/Database_CAU_Project/App/app/routes/monuments/gallery.js:52:13)
+    at Layer.handle [as handle_request] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/router/layer.js:95:5), path=/home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs
+2019-11-25T16:08:07.044Z - info: 500 GET /monuments/gallery 7ms
+2019-11-25T16:08:19.594Z - info: Listening on port 8080
+2019-11-25T16:08:19.987Z - info: 200 GET /monuments/gallery 41ms
+2019-11-25T16:08:20.053Z - info: 304 GET /css/styles.css 3ms
+2019-11-25T16:08:20.227Z - info: 404 GET /favicon.ico 5ms
+2019-11-25T16:08:31.822Z - info: 200 GET /monuments/gallery?search=%27cdsc%27 4ms
+2019-11-25T16:08:31.858Z - info: 200 GET /css/styles.css 4ms
+2019-11-25T16:19:35.700Z - info: Listening on port 8080
+2019-11-25T16:19:37.164Z - error: SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-25T16:19:37.169Z - info: 500 GET /monuments/gallery?search=%27cdsc%27 42ms
+2019-11-25T16:22:14.187Z - error: SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-25T16:22:14.191Z - info: 500 GET /monuments/gallery?search=%27cdsc%27 8ms
+2019-11-25T16:22:25.999Z - error: SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-25T16:22:26.002Z - info: 500 GET /monuments/gallery?search=%27cdsc%27 6ms
+2019-11-25T16:22:30.630Z - info: Listening on port 8080
+2019-11-25T16:22:31.565Z - error: SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-25T16:22:31.570Z - info: 500 GET /monuments/gallery?search=%27cdsc%27 43ms
+2019-11-25T16:22:50.787Z - info: 200 GET /monuments/gallery?search=%27cdsc%27 6ms
+2019-11-25T16:22:50.819Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:22:50.977Z - info: 404 GET /favicon.ico 8ms
+2019-11-25T16:23:02.140Z - error: SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-25T16:23:02.143Z - info: 500 GET /monuments/gallery?search=%27cdsc%27 5ms
+2019-11-25T16:23:08.094Z - error: SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-25T16:23:08.101Z - info: 500 GET /monuments/gallery?search=%27cdsc%27 11ms
+2019-11-25T16:23:13.014Z - error: SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7) message=Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option., stack=SyntaxError: Unexpected token = in /home/freji/Documents/CAU/Database_CAU_Project/App/views/monuments/gallery.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:652:12)
+    at Object.compile (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:392:16)
+    at handleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/ejs/lib/ejs.js:485:10)
+    at View.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:640:10)
+    at Function.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/freji/Documents/CAU/Database_CAU_Project/App/node_modules/express/lib/response.js:1012:7)
+2019-11-25T16:23:13.019Z - info: 500 GET /monuments/gallery?search=%27cdsc%27 8ms
+2019-11-25T16:23:27.026Z - info: 200 GET /monuments/gallery?search=%27cdsc%27 4ms
+2019-11-25T16:23:27.059Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:38.491Z - info: Listening on port 8080
+2019-11-25T16:23:39.294Z - info: 200 GET /monuments/gallery?search=%27cdsc%27 24ms
+2019-11-25T16:23:39.320Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:47.970Z - info: Listening on port 8080
+2019-11-25T16:23:49.447Z - info: 200 GET /monuments/gallery?search=%27cdsc%27 41ms
+2019-11-25T16:23:49.470Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:52.083Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11 9ms
+2019-11-25T16:23:52.116Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:54.472Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11 3ms
+2019-11-25T16:23:54.498Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:55.506Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11 5ms
+2019-11-25T16:23:55.537Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:23:55.955Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11 3ms
+2019-11-25T16:23:55.985Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:23:56.153Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11&11 6ms
+2019-11-25T16:23:56.197Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:23:56.356Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11&11&11 6ms
+2019-11-25T16:23:56.404Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:56.747Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11&11&11&11 5ms
+2019-11-25T16:23:56.781Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:23:57.023Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11&11&11&11&11 10ms
+2019-11-25T16:23:57.068Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:57.189Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11&11&11&11&11&11 12ms
+2019-11-25T16:23:57.265Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:23:57.534Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11&11&11&11&11&11&11 5ms
+2019-11-25T16:23:57.564Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T16:23:57.992Z - info: 200 GET /monuments/gallery?search=%27cdsc%27&11&11&11&11&11&11&11&11&11&11&11 5ms
+2019-11-25T16:23:58.033Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:25:02.858Z - info: Listening on port 8080
+2019-11-25T16:25:09.375Z - info: 200 GET /monuments/gallery?search=cdsc 28ms
+2019-11-25T16:25:09.423Z - info: 200 GET /css/styles.css 3ms
+2019-11-25T16:25:11.205Z - info: 200 GET /monuments/gallery?search=cdsc&page=2 13ms
+2019-11-25T16:25:11.242Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:25:13.256Z - info: 200 GET /monuments/gallery?search=cdsc&page=2&page=2 11ms
+2019-11-25T16:25:13.299Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:33:23.301Z - info: Listening on port 8080
+2019-11-25T16:33:23.800Z - info: 200 GET /monuments/gallery?search=cdsc&page=2&page=2 36ms
+2019-11-25T16:33:23.854Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:33:27.713Z - info: 200 GET /monuments/gallery?search=cdsc&page=1 6ms
+2019-11-25T16:33:27.757Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:33:28.930Z - info: 200 GET /monuments/gallery?search=cdsc&page=2 5ms
+2019-11-25T16:33:28.963Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:33:30.150Z - info: 200 GET /monuments/gallery?search=cdsc&page=4 9ms
+2019-11-25T16:33:30.202Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:33:30.971Z - info: 304 GET /monuments/gallery?search=cdsc&page=2 4ms
+2019-11-25T16:33:30.993Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:33:31.564Z - info: 304 GET /monuments/gallery?search=cdsc&page=1 7ms
+2019-11-25T16:33:31.608Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:33:32.721Z - info: 200 GET /monuments/gallery?search=cdsc&page=5 4ms
+2019-11-25T16:33:32.753Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:33:45.120Z - info: 304 GET /monuments/gallery?search=cdsc 6ms
+2019-11-25T16:33:45.159Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:33:52.538Z - info: 304 GET /monuments/gallery?search=cdsc 5ms
+2019-11-25T16:33:52.567Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:33:58.902Z - info: 200 GET /monuments/gallery?search=cdsc&page=11 4ms
+2019-11-25T16:33:58.931Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:34:03.593Z - info: 304 GET /monuments/gallery?search=cdsc&page=4 4ms
+2019-11-25T16:34:03.638Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:34:05.712Z - info: 200 GET /monuments/gallery?search=cdsc&page=41 5ms
+2019-11-25T16:34:05.749Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:34:12.736Z - info: 404 GET /monuments/NaN 4ms
+2019-11-25T16:35:33.741Z - info: Listening on port 8080
+2019-11-25T16:35:35.177Z - info: 404 GET /monuments/NaN 5ms
+2019-11-25T16:35:36.196Z - info: 404 GET /monuments/NaN 3ms
+2019-11-25T16:35:42.741Z - info: 304 GET /monuments/gallery?search=cdsc&page=5 41ms
+2019-11-25T16:35:42.770Z - info: 304 GET /css/styles.css 2ms
+2019-11-25T16:35:44.100Z - info: 200 GET /monuments/gallery?search=cdsc&page=4 14ms
+2019-11-25T16:35:44.133Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:35:44.851Z - info: 304 GET /monuments/gallery?search=cdsc&page=5 3ms
+2019-11-25T16:35:44.884Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:35:46.328Z - info: 404 GET /monuments/NaN 5ms
+2019-11-25T16:36:07.959Z - info: 404 GET /monuments/NaN 2ms
+2019-11-25T16:36:11.125Z - info: 200 GET /monuments/gallery?search=cdsc&page=5 9ms
+2019-11-25T16:36:11.156Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:36:12.761Z - info: 200 GET /monuments/gallery?search=cdsc&page=4 6ms
+2019-11-25T16:36:12.789Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:36:13.824Z - info: 200 GET /monuments/gallery?search=cdsc&page=3 5ms
+2019-11-25T16:36:13.860Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:36:14.367Z - info: 200 GET /monuments/gallery?search=cdsc&page=2 9ms
+2019-11-25T16:36:14.407Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:36:14.767Z - info: 200 GET /monuments/gallery?search=cdsc&page=1 5ms
+2019-11-25T16:36:14.793Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:36:16.124Z - info: 304 GET /monuments/gallery?search=cdsc&page=2 5ms
+2019-11-25T16:36:16.157Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:36:16.446Z - info: 304 GET /monuments/gallery?search=cdsc&page=3 3ms
+2019-11-25T16:36:16.485Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:36:17.161Z - info: 304 GET /monuments/gallery?search=cdsc&page=4 9ms
+2019-11-25T16:36:17.213Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:36:17.670Z - info: 304 GET /monuments/gallery?search=cdsc&page=5 6ms
+2019-11-25T16:36:17.697Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:45:13.835Z - info: Listening on port 8080
+2019-11-25T16:45:16.688Z - info: 200 GET /monuments/gallery?search=cdsc&page=5 29ms
+2019-11-25T16:45:16.718Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:45:17.924Z - info: 200 GET /monuments/gallery?search=cdsc&page=1 5ms
+2019-11-25T16:45:17.965Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:45:18.766Z - info: 200 GET /monuments/gallery?search=cdsc&page=2 4ms
+2019-11-25T16:45:18.813Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:45:19.990Z - info: 304 GET /monuments/gallery?search=cdsc&page=1 3ms
+2019-11-25T16:45:20.022Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:45:20.657Z - info: 304 GET /monuments/gallery?search=cdsc&page=2 8ms
+2019-11-25T16:45:20.704Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:46:04.564Z - info: 304 GET /monuments/gallery?search=cdsc&page=2 5ms
+2019-11-25T16:46:04.591Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:46:13.682Z - info: Listening on port 8080
+2019-11-25T16:46:14.393Z - info: 200 GET /monuments/gallery?search=cdsc&page=2 34ms
+2019-11-25T16:46:14.415Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:46:16.606Z - info: 200 GET /monuments/gallery?search=cdsc&page=1 11ms
+2019-11-25T16:46:16.664Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:46:18.917Z - info: 304 GET /monuments/gallery?search=cdsc&page=2 5ms
+2019-11-25T16:46:18.961Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:46:20.325Z - info: 200 GET /monuments/gallery?search=cdsc&page=3 5ms
+2019-11-25T16:46:20.366Z - info: 304 GET /css/styles.css 0ms
+2019-11-25T16:46:22.804Z - info: 304 GET /monuments/gallery?search=cdsc&page=2 4ms
+2019-11-25T16:46:22.834Z - info: 304 GET /css/styles.css 1ms
+2019-11-25T16:46:23.466Z - info: 304 GET /monuments/gallery?search=cdsc&page=1 2ms
+2019-11-25T16:46:23.498Z - info: 304 GET /css/styles.css 0ms

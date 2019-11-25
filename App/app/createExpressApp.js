@@ -20,7 +20,7 @@ module.exports = ({ database, logger }) => express()
         return next()
     })
 
-    .use(express.static('./public'))
+    .use(express.static('public'))
     .use(cookieParser())
     .use('/', router)
     .use((error, req, res, next) => {
