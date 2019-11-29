@@ -7,9 +7,13 @@ module.exports = Router({mergeParams: true})
     })
     .get('/users/planning', async(req, res, next) => {
         var username = req.cookies.username;
+        if (username === undefined) {
+            res.redirect("/auth/login")
+            return next();
+        }
 
         res.render('users/planning.ejs',  {
             'username': username
         });
-        next();
+        return next();
     })

@@ -1,0 +1,27 @@
+version: '2.1'
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql
+    build: ./DB
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_HOST: localhost
+      MYSQL_DATABASE: Conseil_voyage
+    volumes:
+      - "./volumes/mysql:/var/lib/mysql"
+  app:
+    container_name: app
+    image: app
+    depends_on:
+     - "mysql"
+    links:
+      - mysql:mysql
+    build: ./App
+    ports:
+      - 8080:8080
+    volumes:
+      - ./app

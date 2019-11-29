@@ -1,0 +1,8 @@
+bin/
+obj/
+node_modules/
+.vs/
+package-lock.json
+volumes
+*.log
+.vscode/
