@@ -3,7 +3,7 @@
 const port = process.env.PORT || 8080;
 
 const logger = require('./logger.js')
-const database = null
+const database = require('./app/mysqlHelpers/mySqlWrapper')
 const app = require('./app/createExpressApp.js')({logger, database})
 const server = require('http').createServer()
 
