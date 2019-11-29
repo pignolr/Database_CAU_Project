@@ -70,13 +70,38 @@
         </div> 
         <script>showSlides(slideIndex);</script>
 
-        <h2>Description:</h2>
-        <br />
-        <a><%= monument.description %></a>
+        <div class="center">
+            <h2>Description:</h2>
+            <a><%= monument.description %></a>
+            <br />
+            <a>Type: <%= monument.type %></a>
+            <a>Style: <%= monument.style %></a>
+            <br />
+            <br />
 
-        <h2>Address:</h2>
-        <br />
-        <a><%= monument.address %></a>
+            <h2>Address:</h2>
+            <h3 style="margin-top:0;margin-bottom:0;""><%= monument.city %></h3>
+            <a><%= monument.address %></a>
+            <br />
+            <br />
+
+            <h2>Period:</h2>
+            <a><%= monument.times %></a>
+            <br />
+            <br />
+
+            <h2>Price:</h2>
+            <a><%= monument.prices %></a>
+            <br />
+            <br />
+
+            <h2>Sport Level</h2>
+            <a><%= monument.sportLevel %></a>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
 
     </body>
 </html>
