@@ -21,7 +21,7 @@
                         <th width="10%">Picture</th>
                         <th width="60%">Description</th>
                         <th width="20%">Address</th>
-                        <th width="10%">Price</th>
+                        <th width="10%">Prices</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,10 +39,13 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="<%= monument.profil %>"><%= monument.address %></a>
+                                <a href="<%= monument.profil %>">
+                                    <h2 style="margin-top:0;" href="<%= monument.profil %>"><%= monument.city %></h2>
+                                    <%= monument.address %>
+                                </a>
                             </td>
                             <td>
-                                <a href="<%= monument.profil %>"><%= monument.price %></a>
+                                <a href="<%= monument.profil %>"><%= monument.prices %></a>
                             </td>
                         </tr>
                     <% }); %>

@@ -13,13 +13,20 @@ module.exports = Router({mergeParams: true})
         let username = req.cookies.username;
         let page = req.query.page || 1
         let maxPage = 1
-        const nbElemByPage = 2
+        const nbElemByPage = 10
         let search = req.query.search
         let monuments = []
 
         let response
         try {
-            response = await req.db.query("SELECT * FROM Monument")
+            let querystring = "SELECT * FROM Monument"
+            let params = {}
+            if (search !== undefined) {
+                querystring += " WHERE name LIKE :name or city LIKE :city"
+                params.city = "%" + search + "%"
+                params.name = "%" + search + "%"
+            }
+            response = await req.db.query(querystring, params)
         } catch (error) {
             response = undefined
             console.log('throw: ' + error)
@@ -40,9 +47,10 @@ module.exports = Router({mergeParams: true})
                         'profil': '/monuments/profil/' + results[i].id,
                         'name': results[i].name,
                         'description': results[i].description.length <= 300 ? results[i].description : results[i].description.substring(0, 300) + '...',
+                        'city': results[i].city,
                         'address': results[i].address,
-                        'picture': results[i].pictures[0],
-                        'price': results[i].price
+//                        'picture': results[i].pictures[0],
+                        'prices': results[i].prices
                     })
                 }
             }

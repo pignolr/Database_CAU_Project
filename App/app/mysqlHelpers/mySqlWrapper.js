@@ -11,7 +11,7 @@ const mySql = require('mysql')
  * @param queryString
  * @param callback - takes a DataResponseObject
  */
-async function query(queryString){
+async function query(queryString, params){
     let connection;
     // let returnValues = {
     //     error: "Not connected",
@@ -26,8 +26,19 @@ async function query(queryString){
         })
 
         await connection.connect()
+
+        connection.config.queryFormat = function (query, values) {
+            if (!values) return query;
+            return query.replace(/\:(\w+)/g, function (txt, key) {
+                if (values.hasOwnProperty(key)) {
+                    return this.escape(values[key]);
+                }
+                return txt;
+            }.bind(this));
+        };
+
         return new Promise(function(resolve, reject) {
-            connection.query(queryString, function(error, results, fields) {
+            connection.query(queryString, params, function(error, results, fields) {
                 if (error) {
                     reject(error)
                 } else {
