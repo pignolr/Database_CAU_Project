@@ -52,7 +52,7 @@
             <% for(let i = 0; i < monument.pictures.length; i++) { %>
                 <div class="mySlides fade">
                     <div class="numbertext"><%= i + 1 %> / <%= monument.pictures.length %></div>
-                    <img src="<%= monument.pictures[i]%>" class="center profil-image">
+                    <img src="<%= monument.pictures[i].url_image%>" class="center profil-image">
                 </div>
             <% }; %>
             

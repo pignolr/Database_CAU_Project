@@ -15,13 +15,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- change password
-SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');
-FLUSH PRIVILEGES;
-
 --
 -- Table structure for table `Access`
 --
+
+-- Set Password to native format
 
 DROP TABLE IF EXISTS `Access`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -100,33 +98,6 @@ INSERT INTO `Customer` VALUES (1,'Lucie Drevet'),(2,'Thomas Limnavong'),(3,'Adam
 UNLOCK TABLES;
 
 --
--- Table structure for table `Image`
---
-
-DROP TABLE IF EXISTS `Image`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Image` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
-  `id_monument` smallint(5) unsigned NOT NULL,
-  `url_image` varchar(256) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `id_monument` (`id_monument`),
-  CONSTRAINT `Image_ibfk_1` FOREIGN KEY (`id_monument`) REFERENCES `Monument` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `Image`
---
-
-LOCK TABLES `Image` WRITE;
-/*!40000 ALTER TABLE `Image` DISABLE KEYS */;
-INSERT INTO `Image` VALUES (1,1,'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/aa/fc.jpg'),(2,2,'https://www.boutiquesdemusees.fr/uploads/branding/2/0_l.jpg?m=1529063659'),(3,3,'http://scd.rfi.fr/sites/filesrfi/imagecache/rfi_16x9_1024_578/sites/images.rfi.fr/files/aef_image/Notre_Dame_dalla_Senna_crop_0.jpg'),(4,4,'http://www.agenor-paris-hotel.com/usermedia/photo-635633248121753983-1.jpg?dummy=0&h=800'),(5,5,'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/34/bc.jpg'),(6,6,'https://cdn.civitatis.com/francia/mont-saint-michel/galeria/mont-saint-michel.jpg'),(7,7,'https://upload.wikimedia.org/wikipedia/commons/6/6d/Avenue_des_Champs-%C3%89lys%C3%A9es_July_24%2C_2009_N1.jpg'),(8,8,'https://www.nerienlouper.paris/wp-content/uploads/2017/04/basilique-sacre-soeur-montmartre.jpg'),(9,9,'https://provence-alpes-cotedazur.com/app/uploads/2019/03/Nice-PACA-credit-Fotolia-e1553851803445.jpg'),(10,10,'http://catacombes.paris.fr/sites/default/files/styles/1920x1080/public/2018-10/cat-footer-faq.jpg?itok=_QDHeHmX'),(11,11,'https://www.sortiraparis.com/images/80/1467/108625-jeu-de-piste-gratuit-au-musee-d-orsay.jpg'),(12,12,'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/70/07/53.jpg'),(13,13,'https://www.sortiraparis.com/images/80/1467/304212-le-centre-pompidou-transforme-en-club-pour-ses-40-ans.jpg'),(14,14,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pantheon_of_Paris_007.JPG/260px-Pantheon_of_Paris_007.JPG'),(15,15,'https://res.cloudinary.com/opera-national-de-paris/image/upload/w_768/v1563286913/visites/accueil-garnier.jpg'),(16,16,'https://cdn.britannica.com/14/178014-050-9BBC3027/Les-Invalides-Paris-Most-complex-Liberal-Bruant-1706.jpg'),(17,17,'https://www.sortiraparis.com/images/80/76154/455912-laurentp-disneyland-paris.jpg'),(18,18,'https://images.musement.com/cover/0003/95/thumb_294977_cover_header.jpeg?&q=60&fit=crop&lossless=true&auto=format&w=412&h=200'),(19,19,'https://keewego.com/wp-content/uploads/2018/10/musee-de-lorangerie.jpg');
-/*!40000 ALTER TABLE `Image` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `Monument`
 --
 
@@ -196,4 +167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-30 16:23:34
+-- Dump completed on 2019-11-28 16:23:07

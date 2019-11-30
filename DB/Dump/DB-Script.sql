@@ -56,6 +56,14 @@ CREATE TABLE Schedule(
 )
 ENGINE=INNODB;
 
+CREATE TABLE Image(
+    id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    id_monument SMALLINT UNSIGNED NOT NULL,
+    url_image varchar(256),
+    PRIMARY KEY (id),
+    FOREIGN KEY (id_monument) REFERENCES Monument(id)
+)
+ENGINE=INNODB;
 
 INSERT INTO Customer(username)VALUES
 ('Lucie Drevet'),
@@ -129,6 +137,26 @@ INSERT INTO Monument (name, description, city, address, times, prices, visiting_
 ('Le Musée de l Orangerie','The National Museum of the Orangerie is a museum of impressionist and postimpressionist paintings located in the Tuileries Garden'
 ,'Paris','Jardin des Tuileries','Every day from 9am to 6pm except tuesday','9$','1h-2h','museum','easy','impressionism');
 
+INSERT INTO Image(id_monument,url_image)VALUES
+(1,"https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/aa/fc.jpg"),
+(2,"https://www.boutiquesdemusees.fr/uploads/branding/2/0_l.jpg?m=1529063659"),
+(3,"http://scd.rfi.fr/sites/filesrfi/imagecache/rfi_16x9_1024_578/sites/images.rfi.fr/files/aef_image/Notre_Dame_dalla_Senna_crop_0.jpg"),
+(4,"http://www.agenor-paris-hotel.com/usermedia/photo-635633248121753983-1.jpg?dummy=0&h=800"),
+(5,"https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/34/bc.jpg"),
+(6,"https://cdn.civitatis.com/francia/mont-saint-michel/galeria/mont-saint-michel.jpg"),
+(7,"https://upload.wikimedia.org/wikipedia/commons/6/6d/Avenue_des_Champs-%C3%89lys%C3%A9es_July_24%2C_2009_N1.jpg"),
+(8,"https://www.nerienlouper.paris/wp-content/uploads/2017/04/basilique-sacre-soeur-montmartre.jpg"),
+(9,"https://provence-alpes-cotedazur.com/app/uploads/2019/03/Nice-PACA-credit-Fotolia-e1553851803445.jpg"),
+(10,"http://catacombes.paris.fr/sites/default/files/styles/1920x1080/public/2018-10/cat-footer-faq.jpg?itok=_QDHeHmX"),
+(11,"https://www.sortiraparis.com/images/80/1467/108625-jeu-de-piste-gratuit-au-musee-d-orsay.jpg"),
+(12,"https://media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/70/07/53.jpg"),
+(13,"https://www.sortiraparis.com/images/80/1467/304212-le-centre-pompidou-transforme-en-club-pour-ses-40-ans.jpg"),
+(14,"https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pantheon_of_Paris_007.JPG/260px-Pantheon_of_Paris_007.JPG"),
+(15,"https://res.cloudinary.com/opera-national-de-paris/image/upload/w_768/v1563286913/visites/accueil-garnier.jpg"),
+(16,"https://cdn.britannica.com/14/178014-050-9BBC3027/Les-Invalides-Paris-Most-complex-Liberal-Bruant-1706.jpg"),
+(17,"https://www.sortiraparis.com/images/80/76154/455912-laurentp-disneyland-paris.jpg"),
+(18,"https://images.musement.com/cover/0003/95/thumb_294977_cover_header.jpeg?&q=60&fit=crop&lossless=true&auto=format&w=412&h=200"),
+(19,"https://keewego.com/wp-content/uploads/2018/10/musee-de-lorangerie.jpg");
 
 INSERT INTO Access (id_monument, type, information) VALUES
 (1,'Metro','Bir-Hakeim(line:6)'),

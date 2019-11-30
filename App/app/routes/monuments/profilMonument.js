@@ -10,11 +10,17 @@ module.exports = Router({mergeParams: true})
         var username = req.cookies.username;
 
         let response
+        let images
         try {
             let querystring = "SELECT * FROM Monument WHERE id = :id"
             let params = { 'id': idMonument }
             response = await req.db.query(querystring, params)
             response = response[0]
+            querystring = "SELECT url_image FROM Image WHERE id_monument = :id"
+            images = await req.db.query(querystring, params)
+            if (images === undefined) {
+                images = []
+            }
         } catch (error) {
             response = undefined
             console.log('throw: ' + error)
@@ -25,12 +31,7 @@ module.exports = Router({mergeParams: true})
                 'monument': {
                     'id': response.id,
                     'name': response.name,
-                    'pictures': [
-                        'https://www.parisinfo.com/var/otcp/sites/images/media/1.-photos/02.-sites-culturels-630-x-405/tour-eiffel-trocadero-630x405-c-thinkstock/37221-1-fre-FR/Tour-Eiffel-Trocadero-630x405-C-Thinkstock.jpg',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/324px-Tour_Eiffel_Wikimedia_Commons.jpg',
-                        'https://www.toureiffel.paris/themes/custom/tour_eiffel/img/poster-tour-eiffel-jour-nuit.jpg',
-                        'https://www.toureiffel.paris/themes/custom/tour_eiffel/img/tour-eiffel-paris.jpg'
-                    ],
+                    'pictures': images,
                     'types': response.type_place,
                     'style': response.style,
                     'description': response.description,

@@ -19,10 +19,10 @@ module.exports = Router({mergeParams: true})
 
         let response
         try {
-            let querystring = "SELECT * FROM Monument"
+            let querystring = "SELECT Monument.*, Image.url_image FROM Monument JOIN Image ON Monument.id = Image.id_monument WHERE (Image.id = (SELECT MIN(Image.id) FROM Image WHERE Image.id_monument = Monument.id))"
             let params = {}
             if (search !== undefined) {
-                querystring += " WHERE name LIKE :name or city LIKE :city"
+                querystring += " AND (name LIKE :name or city LIKE :city)"
                 params.city = "%" + search + "%"
                 params.name = "%" + search + "%"
             }
@@ -49,7 +49,7 @@ module.exports = Router({mergeParams: true})
                         'description': results[i].description.length <= 300 ? results[i].description : results[i].description.substring(0, 300) + '...',
                         'city': results[i].city,
                         'address': results[i].address,
-//                        'picture': results[i].pictures[0],
+                       'picture': results[i].url_image,
                         'prices': results[i].prices
                     })
                 }
