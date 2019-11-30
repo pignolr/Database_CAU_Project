@@ -1,6 +1,6 @@
 {
-  "name": "app-tourisme",
-  "version": "0.1.0",
+  "name": "conseil-voyage",
+  "version": "1.0.0",
   "description": "Application Tourisme",
   "dependencies": {
     "body-parser": "~1.19",

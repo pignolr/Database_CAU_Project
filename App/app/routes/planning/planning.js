@@ -55,8 +55,6 @@ module.exports = Router({mergeParams: true})
                 }
             }
         }
-        console.log(schedule)
-        console.log(days)
 
         res.render('planning/planning.ejs',  {
             'username': username,

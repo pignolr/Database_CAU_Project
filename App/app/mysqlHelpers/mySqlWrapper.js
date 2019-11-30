@@ -13,13 +13,10 @@ const mySql = require('mysql')
  */
 async function query(queryString, params){
     let connection;
-    // let returnValues = {
-    //     error: "Not connected",
-    //     results: undefined
-    // };
+
     try {
         connection = await mySql.createConnection({
-            host: 'localhost',
+            host: 'mysql',
             user: 'user',
             password: 'password',
             database: 'Conseil_voyage'

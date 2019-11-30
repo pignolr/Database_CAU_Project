@@ -6,12 +6,13 @@ services:
     image: mysql
     build: ./DB
     ports:
-      - 3306:3306
+      - 3307:3306
+    expose:
+      - 3307
     environment:
       MYSQL_ROOT_PASSWORD: root_password
       MYSQL_PASSWORD: password
       MYSQL_USER: user
-      MYSQL_HOST: localhost
       MYSQL_DATABASE: Conseil_voyage
     volumes:
       - "./volumes/mysql:/var/lib/mysql"
@@ -24,6 +25,6 @@ services:
       - mysql:mysql
     build: ./App
     ports:
-      - 8080:8080
+      - 49160:8080
     volumes:
-      - ./app
+      - "./App:/usr/src/app"
