@@ -3,16 +3,17 @@ import moment from 'moment'
 
 module.exports = Router({mergeParams: true})
     .get('/planning', async(req, res, next) => {
-        var username = req.cookies.username;
+        let username = req.cookies.username;
         if (username === undefined) {
             res.redirect("/auth/login")
             return next();
         }
+        let week = +req.query.week | 0;
 
         let responseSchedule = [];
         let schedule = [];
         let response;
-        let startOfWeek = moment().startOf('isoweek').subtract(1, 'days');
+        let startOfWeek = moment().startOf('isoweek').subtract(1, 'days').add(week, 'weeks');
         let days = []
         try {
             let querystring = "SELECT Schedule.*, Monument.name FROM Schedule JOIN Monument ON Monument.id = Schedule.id_monument WHERE id_client = (SELECT id FROM Customer WHERE username = :username Limit 1) and DATE(date_from) = DATE(:date) ORDER BY date_from;"
@@ -59,6 +60,7 @@ module.exports = Router({mergeParams: true})
 
         res.render('planning/planning.ejs',  {
             'username': username,
+            'week': week,
             'days': days,
             'schedule': schedule
         });
