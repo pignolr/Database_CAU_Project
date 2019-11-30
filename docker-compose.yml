@@ -26,5 +26,3 @@ services:
     build: ./App
     ports:
       - 49160:8080
-    volumes:
-      - "./App:/usr/src/app"
