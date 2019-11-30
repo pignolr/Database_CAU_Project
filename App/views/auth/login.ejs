@@ -11,6 +11,9 @@
         <%- include ../partials/navbar.ejs %>
 
         <div class="center">
+            <% if (error_message !== null) { %>
+            <h1><%= error_message %></h1>
+            <% } %>
             <h1 style="text-align:center">Login</h1>
             <form action="/auth/login" method="post">
                 <p>

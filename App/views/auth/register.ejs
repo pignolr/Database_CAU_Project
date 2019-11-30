@@ -10,11 +10,10 @@
     <body>
         <%- include ../partials/navbar.ejs %>
         
-        <% if (locals.message) { %>
-        <h1><%= message %></h1>
-        <% } %>
         <div class="center">
-            <h1>Register</h1>
+            <% if (error_message !== null) { %>
+            <h1><%= error_message %></h1>
+            <% } %>            <h1>Register</h1>
             <form action="/auth/register" method="post">
                 <p>
                     <label for="user">User</label>
