@@ -7,6 +7,10 @@ module.exports = Router({mergeParams: true})
         let date_from = new Date(req.body.date + ' ' + req.body.time_from);
         let date_to = new Date(req.body.date + ' ' + req.body.time_to);
 
+        if (username === undefined) {
+            res.redirect('auth/login');
+            return next();
+        }
         if (Object.prototype.toString.call(date_from) === "[object Date]"
             && Object.prototype.toString.call(date_to) === "[object Date]"
             && !isNaN(date_from.getTime())

@@ -5,6 +5,10 @@ module.exports = Router({mergeParams: true})
         let id_schedule = req.params.id_schedule;
         let username = req.cookies.username;
 
+        if (username === undefined) {
+            res.redirect('auth/login');
+            return next();
+        }
         let response;
         try {
             let querystring = "DELETE FROM Schedule Where id = :id_schedule and id_client = (select id from Customer where username = :username limit 1);" 

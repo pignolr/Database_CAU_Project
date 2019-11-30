@@ -26,7 +26,7 @@ module.exports = Router({mergeParams: true})
             console.log('throw: ' + error)
         }
         if (response !== undefined) {
-            res.render('monuments/profilMonument.ejs', {
+            res.render('monuments/profil.ejs', {
                 'username': username,
                 'monument': {
                     'id': response.id,
