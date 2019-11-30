@@ -101,7 +101,31 @@
             <br />
             <br />
             <br />
-        </div>
 
+            <% if (username !== undefined) { %>
+            <form action="/planning/add/<%=monument.id%>" method="post">
+                <h2>Add to Planning</h2>
+                <a>Date:</a>
+                <input type="date" name="date" required>
+                <a>From:</a>
+                <input type="time" id="time1" name="time_from" min="07:00" required>
+                <a>To:</a>
+                <input type="time" id="time2" name="time_to" min="07:00" disabled="true" required>
+                <input type="submit" value="Submit" />
+            </form>
+            <script>
+                var inp1 = document.getElementById("time1");
+                inp1.oninput = function () {
+                    document.getElementById("time2").disabled = this.value == "" || this.value < this.min;
+                    document.getElementById("time2").min = this.value;
+                };
+            </script>
+            <br />
+            <br />
+            <br />
+            <br />
+            <% } %>
+
+        </div>
     </body>
 </html>

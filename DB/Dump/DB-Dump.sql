@@ -167,12 +167,14 @@ DROP TABLE IF EXISTS `Schedule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Schedule` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `id_client` smallint(5) unsigned NOT NULL,
   `id_monument` smallint(5) unsigned NOT NULL,
   `date_from` timestamp NULL DEFAULT NULL,
   `date_to` timestamp NULL DEFAULT NULL,
   KEY `id_monument` (`id_monument`),
   KEY `id_client` (`id_client`),
+  PRIMARY KEY (`id`),
   CONSTRAINT `Schedule_ibfk_1` FOREIGN KEY (`id_monument`) REFERENCES `Monument` (`id`),
   CONSTRAINT `Schedule_ibfk_2` FOREIGN KEY (`id_client`) REFERENCES `Customer` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
