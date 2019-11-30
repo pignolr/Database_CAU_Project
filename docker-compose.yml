@@ -8,7 +8,9 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_PASSWORD: password
+      MYSQL_USER: user
       MYSQL_HOST: localhost
       MYSQL_DATABASE: Conseil_voyage
     volumes:

@@ -20,7 +20,7 @@ async function query(queryString, params){
     try {
         connection = await mySql.createConnection({
             host: 'localhost',
-            user: 'root',
+            user: 'user',
             password: 'password',
             database: 'Conseil_voyage'
         })
