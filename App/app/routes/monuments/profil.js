@@ -11,20 +11,54 @@ module.exports = Router({mergeParams: true})
 
         let response
         let images
+        let access
+        let affluence
         try {
             let querystring = "SELECT * FROM Monument WHERE id = :id"
             let params = { 'id': idMonument }
             response = await req.db.query(querystring, params)
             response = response[0]
-            querystring = "SELECT url_image FROM Image WHERE id_monument = :id"
+        } catch (error) {
+            response = undefined
+            console.log('throw: ' + error)
+        }
+
+        try {
+            let querystring = "SELECT url_image FROM Image WHERE id_monument = :id"
+            let params = { 'id': idMonument }
             images = await req.db.query(querystring, params)
             if (images === undefined) {
                 images = []
             }
         } catch (error) {
-            response = undefined
+            images = []
             console.log('throw: ' + error)
         }
+
+        try {
+            let querystring = "SELECT * FROM Access WHERE id_monument = :id"
+            let params = { 'id': idMonument }
+            access = await req.db.query(querystring, params)
+            if (access === undefined) {
+                access = []
+            }
+        } catch (error) {
+            access = []
+            console.log('throw: ' + error)
+        }
+
+        try {
+            let querystring = "SELECT * FROM Affluence WHERE id_monument = :id"
+            let params = { 'id': idMonument }
+            affluence = await req.db.query(querystring, params)
+            if (affluence === undefined) {
+                affluence = []
+            }
+        } catch (error) {
+            affluence = []
+            console.log('throw: ' + error)
+        }
+
         if (response !== undefined) {
             res.render('monuments/profil.ejs', {
                 'username': username,
@@ -39,7 +73,9 @@ module.exports = Router({mergeParams: true})
                     'times': response.times,
                     'city': response.city,
                     'address': response.address,
-                    'sportLevel': response.sport_level
+                    'sportLevel': response.sport_level,
+                    'access': access,
+                    'affluence': affluence
                 }
             });
         } else {

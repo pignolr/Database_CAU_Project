@@ -99,6 +99,57 @@
             <a><%= monument.sportLevel %></a>
             <br />
             <br />
+
+            <h2>Access</h2>
+            <% if (monument.access.length !== 0) { %>
+                <table style="margin:0 auto;">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let i = 0; i < monument.access.length; i++) { %>
+                            <tr>
+                                <td><%= monument.access[i].type %></td>
+                                <td><%= monument.access[i].information%></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <br />
+            <% } else { %>
+                <a>No access</a>
+                <br />
+            <% }%>
+            <br />
+
+            <h2>Affluence</h2>
+            <% if (monument.affluence.length !== 0) { %>
+                <table style="margin:0 auto;">
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Times</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let i = 0; i < monument.affluence.length; i++) { %>
+                            <tr>
+                                <td><%= monument.affluence[i].times %></td>
+                                <td><%= monument.affluence[i].affluence_level%></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <br/>
+            <% } else { %>
+                <a>No Affluence</a>
+                <br />
+            <% } %>
+            <br />
+
             <br />
             <br />
 
@@ -119,34 +170,7 @@
                     document.getElementById("time2").disabled = this.value == "" || this.value < this.min;
                     document.getElementById("time2").min = this.value;
                 };
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </script>
+            </script>
             <br />
             <br />
             <br />
